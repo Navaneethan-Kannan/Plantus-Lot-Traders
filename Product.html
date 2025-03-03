@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantus lot Traders</title>
+    <link rel="icon" href="./img/final logo_page-0001-Photoroom.png">
+    <link rel="stylesheet" href="./Project.css">
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- animate.css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- On scrool -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- Awsome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+      
+      html {
+        scroll-behavior: smooth;
+    }
+    body{
+      font-family: "Host Grotesk", serif;
+      /*background-image: linear-gradient(to right, #FAF3E0, beige ) ;*/
+    }
+
+      #textwithimg{
+        height:420px;
+        width:500px;
+        object-fit: cover;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 10px double rgb(153, 103, 56);
+        outline: 4px solid rgb(170, 104, 51);
+        filter:brightness(100%);
+        box-shadow: 10px 1px  50px rgb(63, 60, 60);
+
+
+      }
+
+
+      #content-title{
+        font-size: 25px;
+        font-weight: 610;
+        margin-left: 40%;
+        margin-top: 40px;
+        color:#b95d16;
+      }
+      #content{
+        line-height: 30px;
+        margin-right: 30px;
+        font-size: 18px;
+        margin-top: 20px;
+        color: rgb(20, 20, 20);
+        font-family: 'Times New Roman', Times, serif;
+
+      }
+      #demo{
+        background-color:#fffdfd;
+      }
+      
+      .spicecontent{
+        justify-content: space-around;
+      }
+
+      #bookmark-rice{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+      
+      #bookmark-spices{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+      #bookmark-millets{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+      #bookmark-oils{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+      #bookmark-salt{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+      #bookmark-health{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+
+      #bookmark-fruits{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+      
+      #bookmark-CoconutProducts{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+
+      #bookmark-Vegetables{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+
+      #bookmark-CleaningChemicals{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+      #bookmark-ConstructionMaterials{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:80px
+      }
+      #bookmark-MechanicalComponents{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+      #bookmark-Others{
+        display: flex;
+        border: 1px solid none;
+        margin-top: 50px;
+        gap:120px
+      }
+    #Head{
+      color:#b95d16;
+    }
+
+    #carouselbg{
+      background-image: url("./img/Background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(95%);
+      /*background-image:linear-gradient(to right, rgb(226, 141, 22) , rgb(185, 183, 180)) ;*/
+    }
+    #productimg{
+      box-shadow: 1px 1px 8px black;
+    }
+    #productimg:hover{
+      box-shadow: 1px 1px 10px black;
+    }
+    #productimg:active{
+      box-shadow: 1px 1px 25px black;
+    }
+    </style>
+
+
+</head>
+
+
+
+<body>
+
+<!-- On scrool script-->
+<script>
+  AOS.init();
+</script>
+
+<!-- Menu Bar -->
+
+  <!-- <div class="mainpop"> -->
+    <div class="container-fluid headdum" style="padding:1px 10px">
+      <div class="d-flex justify-content-between align-items-center">
+          <!-- Menu Button (Left) -->
+          <button id="menu-btn" class="menu-btn">☰</button>
+
+          <!-- Centered Menu -->
+          <div id="menu-bar" class="animate__animated animate__fadeInLeft">
+              <ul id="add">
+                  <li><a href="./Plantus_home.html">HOME</a></li>
+                  <li><a href="./About.html">ABOUT US</a></li>
+                  <li><a href="./Brochure/Rice.pdf" target="_blank">BROCHURE</a></li>
+                  <li><a href="./Product.html">OUR PRODUCTS</a></li>
+                  <li><a href="./Policy.html">POLICY</a></li>
+                  <li><a href="./Contact.html">CONTACT US</a></li>
+              </ul>
+          </div>
+
+          <!-- Logo & Company Name (Right) -->
+          <div class="d-flex align-items-center gap-3">
+              <img src="./img/final logo img.jpg" alt="logo" class="logo">
+              <span class="companyname mt-2">Plantus Lot Traders</span>
+          </div>
+      </div>
+  </div>
+
+  <style>
+
+      @media only screen and (max-width: 600px) {
+          .companyname {background: black;
+                      font-size:18px;
+                      padding-left: 0px;
+          }
+          .logo{
+              height: 50px;
+              width: 65px;
+          }
+        }
+  </style>
+
+  <!-- <script>
+      const menuButton = document.getElementById("menu-btn");
+      const menuBar = document.getElementById("menu-bar");
+
+      // Toggle menu visibility
+      menuButton.addEventListener("click", () => {
+          menuBar.style.display = (menuBar.style.display === "block") ? "none" : "block";
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (event) => {
+          if (!menuButton.contains(event.target) && !menuBar.contains(event.target)) {
+              menuBar.style.display = "none";
+          }
+      });
+  </script> -->
+
+  <script>
+      const menuButton = document.getElementById("menu-btn"); // Corrected selector
+      const menuBar = document.getElementById("menu-bar");
+  
+      // Toggle the menu bar when the button is clicked
+      menuButton.addEventListener("click", () => {
+        if (menuBar.style.display === "block") {
+          menuBar.style.display = "none";
+        } else {
+          menuBar.style.display = "block";
+  
+          // Automatically close the menu after 10 seconds
+          setTimeout(() => {
+            menuBar.style.display = "none";
+          }, 20000); // 10 seconds
+        }
+      });
+  
+      // Close the menu bar when any menu item is clicked
+      const menuItems = menuBar.querySelectorAll("a");
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          menuBar.style.display = "none";
+        });
+      });
+    </script>
+ <style> 
+  @media screen and (max-width: 600px) {
+    #demo {
+      display: none;
+    }
+  }
+
+ /* @media screen and (max-width: 600px) {
+    #demo1 {
+      display:block !important;
+    }
+  }*/
+ </style>
+
+
+    <!-- big screen Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <!-- <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+   -->
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div  style="display:flex; gap:20px; position: relative; z-index: 1" id="carouselbg">
+          <img src="./img/Basmati rice.jpg" alt="" id="textwithimg">
+
+          <p id="content" class="animate__animated animate__zoomIn"> <span id="content-title">Rice</span><br>
+            Our Plantus Lot Traders, provide a diverse selection of high-quality rice varieties to 
+            satisfy culinary needs across the globe. Sourced from the best fields, our rice is processed 
+            with care to ensure freshness, quality, and flavor. <br> We export a variety of rice, including Basmati rice, 
+            Brown Basmati rice, Jasmine rice, 
+            Parboiled rice, Ponni rice, Poongar rice, Red rice, Sona Masuri, Wild Elephant rice, and more Basmati rice, 
+            Brown basmati rice, Jasmine rice, parboiled rice, ponni rice, 
+            Poongar rices, Red rice, sona masuri, Wild elephant rice etc.., 
+          </p>
+              <div id="flexdiv">
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+              </div>
+              <div id="flexdiv1">
+                <div id="ani2"></div>
+                <div id="ani2"></div>
+                <div id="ani2"></div>
+                <div id="ani2"></div>
+            </div>
+            <div id="flexdiv2">
+              <div id="ani1"></div>
+              <div id="ani1"></div>
+              <div id="ani1"></div>
+              <div id="ani1"></div>
+          </div>
+        </div> 
+    </div>
+
+    <!-- Animation -->
+<style>
+  #flexdiv{
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    left: 70%;
+    top:20%;
+    z-index: -1;
+    animation: move1;
+    animation-duration: 12s;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform: rotate(10deg); 
+  }
+  #flexdiv1{
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    left: 30%;
+    top:40%;
+    z-index: -1;
+    animation: move2;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform: rotate(50deg);
+ 
+  } 
+
+  #flexdiv2{
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    left: 70%;
+    top:80%;
+    z-index: -1;
+    animation: move3;
+    animation-duration: 14s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform: rotate(70deg);
+
+
+    
+  }
+  #ani1{
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, rgb(253, 253, 253) , rgba(13, 14, 13, 0));
+  }
+  #ani2{
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #e8e8e9 , rgba(31, 24, 1, 0));
+  }
+
+
+  @keyframes move1{
+    from {
+        top:20%;
+        left:60%;
+    }
+    to {        
+        left:35%;
+        top:40%;
+        transform: rotate(180deg);
+        opacity: 0.1;
+
+    }
+}
+
+@keyframes move2{
+  0% {
+      top:40%;
+      left:60%;
+      transform: rotate(-180deg);
+  }
+  50% {        
+      left:50%;
+      top:35%;
+  }
+  80% {        
+    left:40%;
+    top:25%;
+    opacity: 0.5;
+}
+100% {        
+  left:50%;
+  top:35%;
+}
+}
+
+@keyframes move3{
+  from {
+      top:25%;
+      left:60%;
+  }
+  to {        
+      left:40%;
+      top:20%;
+      transform: rotate(-180deg);
+
+  }
+}
+
+</style>
+
+
+
+<div class="carousel-item">
+      <div  style="display:flex; gap:20px" id="carouselbg">
+          <img src=".//img/cumin seed.jpg" alt="" id="textwithimg" style="object-fit:cover">
+
+          <p id="content" class="animate__animated animate__zoomIn"> <span id="content-title">Spices</span><br>
+            At Plantus Lot Traders, we take great pride in offering high-quality spices that enhance the 
+            flavor, aroma, and health benefits of cuisines worldwide. Our spices are carefully sourced from the finest 
+            growers, meticulously processed, and expertly packaged to ensure maximum freshness and authenticity. We are 
+            committed to delivering products that meet the highest standards, serving both culinary and medicinal needs across
+            global markets. Our range of spices includes Green Cardamom, Black Cardamom, Black Pepper, White Pepper, 
+            Bulb Turmeric, Finger Turmeric, Carom (Ajwain), Cinnamon Stick, Clove, Coriander Seed, Cumin Powder, 
+            Dry Bay Leaf, Fennel Seed, Fenugreek Seed, Javitri (Mace), Nutmeg, Red Chilly, Star Anise, Tamarind Cake, Tamarind 
+            Disc, and more. <span style="visibility: hidden">Fennel Seed, Fenugreek Seed, Javitri (Mace), Nutmeg, Red Chilly, Star Anise, Tamarind Cake</span> 
+          </p>
+                  <div id="flexdiv">
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                </div>
+                <div id="flexdiv1">
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+              </div>
+              <div id="flexdiv2">
+                <div id="ani1"></div>
+                <div id="ani1"></div>
+                <div id="ani1"></div>
+                <div id="ani1"></div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="carousel-item">
+      <div  style="display:flex; gap:20px" id="carouselbg">
+          <img src="./img/pearl millet (kambu)s.jpg" alt="" id="textwithimg" style="object-fit:cover">
+
+          <p id="content" class="animate__animated animate__zoomIn"> <span id="content-title">Millets</span><br>
+            We offer a wide range of premium millets and grains that are both nutritious and 
+            adaptable for various culinary needs. Carefully sourced from trusted farms and processed to retain their
+             full nutritional potential, our grains are packed with essential vitamins, minerals, and fiber. We are 
+             committed to promoting a healthier and more sustainable way of eating by providing top-quality grains to 
+             customers around the globe. Here’s a selection of the key millets and grains <br><br> <strong>We Export:</strong> Barnyard millet, 
+             Finger millet, Foxtail millet seeds, Jowar
+             millet, Kodo millet, Little Millet, Pearl millet, Proso millet, Wheat, Urad dal, and more.
+          </p>
+                  <div id="flexdiv">
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                </div>
+                <div id="flexdiv1">
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+              </div>
+              <div id="flexdiv2">
+                <div id="ani1"></div>
+                <div id="ani1"></div>
+                <div id="ani1"></div>
+                <div id="ani1"></div>
+              </div>
+        </div> 
+    </div>
+    <div class="carousel-item">
+      <div  style="display:flex; gap:20px" id="carouselbg">
+          <img src="./img/oilscarousel.jpg" alt="" id="textwithimg" style="object-fit:cover">
+
+          <p id="content" class="animate__animated animate__zoomIn"> <span id="content-title">Oils</span><br>
+            Our company specialize in providing a premium selection of natural oils that are perfect for both culinary 
+            and health uses. Carefully sourced from the finest ingredients and processed to maintain their purity, our 
+            oils are rich in flavor, aroma, and nutritional benefits. <br> These oils not only enhance the taste of your meals but 
+            also contribute to a healthy lifestyle. 
+            The high-quality oils we export: Coconut oil, Gingelly oil, Groundnut oil, Sunflower oil. 
+          </p>
+                  <div id="flexdiv">
+                      <div id="ani1"></div>
+                      <div id="ani1"></div>
+                      <div id="ani1"></div>
+                      <div id="ani1"></div>
+                  </div>
+                  <div id="flexdiv1">
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                </div>
+                <div id="flexdiv2">
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                </div>
+        </div> 
+    </div>
+    <div class="carousel-item">
+      <div  style="display:flex; gap:20px" id="carouselbg">
+          <img src="./img/Moringa.png" alt="" id="textwithimg">
+
+          <p id="content" class="animate__animated animate__zoomIn"> <span id="content-title">Health</span><br>
+            We are committed to offering a range of premium health products that support a balanced and nutritious
+             lifestyle. Our products are carefully sourced and processed to retain their natural properties, providing a 
+             wealth of health benefits. We take pride in delivering high-quality health ingredients to customers around the world. Below are some of the key health products we export: Health mix, Moringa powder, Red saffron threads. Each of these products is carefully crafted to support your health goals,
+            whether you're looking to boost energy, improve immunity, or enjoy the goodness of natural, wholesome ingredients. 
+          </p>
+                  <div id="flexdiv">
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                    <div id="ani1"></div>
+                </div>
+                <div id="flexdiv1">
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+                  <div id="ani1"></div>
+              </div>
+              <div id="flexdiv2">
+                <div id="ani1"></div>
+                <div id="ani1"></div>
+                <div id="ani1"></div>
+                <div id="ani1"></div>
+              </div>
+        </div> 
+    </div>
+  </div> 
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" style="background-color:rgb(27, 27, 27)"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon" style="background-color:rgb(27, 27, 27);opacity:0.8;transition:0.9s"></span>
+  </button>
+</div>
+
+
+
+
+<!-- Main Content -->
+
+ <!-- Rice -->
+ <div id="bookmark-rice">
+  <div style="margin-left:60px" data-aos="zoom-out-up">
+  <h3 style="text-align:center;color:#b95d16">Rice</h3>
+  <p style="line-height:35px;color:rgb(112, 111, 111)"> Our Plantus Lot Traders, provide a diverse selection of high-quality rice varieties to satisfy culinary needs across the globe. Sourced from the best 
+    fields, our rice is processed with care to ensure freshness, quality, and flavor. We export a variety of rice, including Basmati rice, Brown Basmati rice, Jasmine rice, Parboiled rice, Ponni rice, Poongar rice, Red rice, 
+    Sona Masuri, Wild Elephant rice, and more Basmati rice, Brown basmati rice, Jasmine rice, 
+    parboiled rice, ponni rice, Poongar rices, Red rice, sona masuri, Wild elephant rice etc., <br>we proudly offer a diverse selection of premium rice varieties to meet the culinary preferences of customers worldwide. Carefully sourced from the finest fields, our rice is
+    meticulously processed to ensure exceptional freshness, quality, and flavor.</p>
+  </div>
+  <div style="margin-right:50px;margin-top:30px" data-aos="zoom-out-up">
+      <a href="./Productimg.html#rice"><img title="Click to more" data-bs-toggle="tooltip" id="productimg" src="./img/red rice.jpg" alt="" height="350px"  width="350px" style="margin-top:20px;object-fit:cover"></a>
+  </div>
+</div>
+
+
+<!-- spices -->
+
+<div id="bookmark-spices">
+
+  <div style="margin-left:40px;margin-top:30px" data-aos="zoom-out-up">
+    <a href="./Productimg.html#Spices"><img title="Click to more" data-bs-toggle="tooltip" id="productimg" src=".//img/Red chilly.jpg" alt="" height="300px"  width="300px" style="margin-top:30px"></a>
+  </div>
+
+  <div style="margin-right:40px" data-aos="zoom-out-up">
+  <h3 style="text-align:center;color:#b95d16">Spices</h3>
+  <p style="line-height:35px;color:rgb(112, 111, 111)"> At Plantus Lot Traders, we take great pride in offering high-quality spices that enhance the 
+    flavor, aroma, and health benefits of cuisines worldwide. Our spices are carefully sourced from the finest 
+    growers, meticulously processed, and expertly packaged to ensure maximum freshness and authenticity. We are 
+    committed to delivering products that meet the highest standards, serving both culinary and medicinal needs across
+    global markets. Our range of spices includes Green Cardamom, Black Cardamom, Black Pepper, White Pepper, 
+    Bulb Turmeric, Finger Turmeric, Carom (Ajwain), Cinnamon Stick, Clove, Coriander Seed, Cumin Powder, 
+    Dry Bay Leaf, Fennel Seed, Fenugreek Seed, Javitri (Mace), Nutmeg, Red Chilly, Star Anise, Tamarind Cake, Tamarind 
+    Disc, and more. <br> we are dedicated to providing premium-quality spices that elevate the flavor, aroma, and health benefits of dishes worldwide. Our carefully sourced spices from 
+    trusted growers are meticulously processed and expertly packaged to maintain their freshness and authenticity.</p>
+  </div>
+  
+</div>
+
+
+<!-- Millets -->
+
+<div id="bookmark-millets">
+  <div style="margin-left:60px" data-aos="zoom-out-up">
+  <h3 style="text-align:center;color:#b95d16">Millets</h3>  
+  <p style="line-height:35px;color:rgb(112, 111, 111)"> We offer a wide range of premium millets and grains that are both nutritious 
+    and adaptable for various culinary needs. Carefully sourced from trusted farms and processed to retain their full 
+    nutritional potential, our grains are packed with essential vitamins, minerals, and fiber. We are committed to 
+    promoting a healthier and more sustainable way of eating by providing top-quality grains to customers around the globe. Here’s a selection of the key millets and grains. <br>  <strong>We Export:</strong> Barnyard millet, Finger millet, Foxtail millet seeds, 
+    Jowar millet, Kodo millet, Little Millet, Pearl millet, Proso millet, Wheat, Urad dal, and more. <br>Sourced from 
+    trusted farms and carefully processed to preserve their full nutritional value, our products are packed with essential 
+    vitamins, minerals, and fiber, promoting a healthier and more sustainable lifestyle.</p>
+  </div>
+  <div style="margin-right:50px;margin-top:30px" data-aos="zoom-out-up">
+    <a href="./Productimg.html#Millets"> <img title="Click to more" data-bs-toggle="tooltip" id="productimg" src=".//img/jowar millet (soolam).png" alt="" height="350px"  width="350px"></a>
+  </div>
+</div>
+
+
+
+<!-- Oils -->
+
+<div id="bookmark-oils">
+
+  <div style="margin-left:50px;margin-top:30px" data-aos="zoom-out-up">
+    <a href="./Productimg.html#Oils"><img title="Click to more" data-bs-toggle="tooltip" id="productimg" src="./img/Sunflower oil.jpg" alt="" height="300px"  width="300px"></a>
+  </div>
+
+  <div style="margin-right:40px" data-aos="zoom-out-up">
+  <h3 style="text-align:center;color:#b95d16">Oils</h3>
+  <p style="line-height:35px;color:rgb(112, 111, 111)">  Our company specialize in providing a premium selection of natural oils that are 
+    perfect for both culinary and health uses. Carefully sourced from the finest ingredients and processed to maintain their purity, our oils are rich in flavor, aroma, and nutritional benefits. These oils not only enhance the taste of your meals but also contribute to a healthy lifestyle. 
+    The high-quality oils we export: Coconut oil, Gingelly oil, Groundnut oil, Sunflower oil. <br>we specialize in offering a premium selection of natural oils,
+     perfect for both culinary and health purposes. Extracted from premium-quality ingredients and refined to retain their natural essence, our oils are celebrated for their 
+     rich taste, inviting aroma, and numerous health benefits.</p>
+  </div>
+  
+</div>
+
+<!-- Salt -->
+
+<div id="bookmark-salt">
+<div style="margin-left:50px" data-aos="zoom-out-up">
+<h3 style="text-align:center;color:#b95d16">Salt</h3>
+<p style="line-height:35px;color:rgb(112, 111, 111)"> <strong>Pure Rock Salt</strong> is a 100% natural and unrefined mineral rich in essential trace elements like 
+calcium, potassium, magnesium, and iron. It is a healthier alternative to regular table salt, ideal for cooking, 
+seasoning, wellness treatments, detox baths, 
+and even skin care. Its natural purity and versatility make it a popular choice for culinary and therapeutic uses <br> <strong>Sand Salt</strong>, on the other hand, is a raw and unrefined salt mixed with fine sand particles, primarily used for industrial applications such as de-icing, construction, water softening, and traditional purposes like rituals and cleaning. While not suitable for direct consumption, its cost-effectiveness 
+and multi-purpose nature make it a practical choice for various needs. </p>
+</div>
+<div style="margin-right:50px;margin-top:30px" data-aos="zoom-out-up">
+  <a href="./Productimg.html#Salts"> <img title="Click to more" data-bs-toggle="tooltip" id="productimg" src="./img/Rock Salt.jpg" alt="" height="300px"  width="300px"></a>
+</div>
+</div>
+
+<!-- Health -->
+
+<div id="bookmark-health">
+
+<div style="margin-left:50px;margin-top:30px" data-aos="zoom-out-up">
+  <a href="./Productimg.html#Health"> <img title="Click to more" data-bs-toggle="tooltip" id="productimg" src="./img/Red saffron threads.jpg" alt="" height="300px"  width="300px"> </a>
+</div>
+
+<div style="margin-right:50px" data-aos="zoom-out-up">
+<h3 style="text-align:center;color:#b95d16">Health</h3>
+<p style="line-height:35px;color:rgb(112, 111, 111)">   We are committed to offering a range of premium health products that support a 
+balanced and nutritious lifestyle. Our products are carefully sourced and processed to retain their natural 
+properties, providing a wealth of health benefits. We take pride in delivering high-quality health ingredients to 
+customers around the world. Below are some of the key health products. <br> <strong>We Export:</strong>  Health mix, Moringa powder, Red 
+saffron threads. Each of these products is carefully crafted to support your health goals, whether you're looking 
+to boost energy, improve immunity, or enjoy the goodness of natural, wholesome ingredients.</p>
+</div>
+
+</div>
+
+
+
+<!-- Coconut Products -->
+
+<div id="bookmark-CoconutProducts">
+<div style="margin-left:40px" data-aos="zoom-out-up">
+<h3 style="text-align:center;color:#b95d16">Coconut Products</h3>
+
+<p style="line-height:35px;color:rgb(112, 111, 111)">At Plantus Lot Traders, we proudly offer a premium range of coconut products sourced directly from our own coconut plantations. Our offerings include fresh coconuts known for their natural sweetness and versatility, high-quality coconut coir ideal for eco-friendly applications, cocopeat for sustainable gardening solutions, and tender coconuts that provide a refreshing and nutritious drink. Each product is carefully harvested and
+processed to ensure top-notch quality, catering to the diverse needs of customers worldwide.<br>Fresh coconuts, 
+coconut coir, cocopeat, and tender coconuts from our own coconut plantations.  </p>
+</div>
+<div style="margin-right:50px;margin-top:30px" data-aos="zoom-out-up">
+  <a href="./Productimg.html#Coconut"><img title="Click to more" id="productimg" data-bs-toggle="tooltip" src="./img/cocopeat disc.jpg" alt="" height="350px"  width="350px"></a>
+</div>
+</div>
+
+
+<!-- Fruits -->
+
+<div id="bookmark-fruits">
+
+  <div style="margin-left:50px;margin-top:30px" data-aos="zoom-out-up">
+    <a href="./Productimg.html#Friuts"> <img title="Click to more" data-bs-toggle="tooltip" id="productimg" src="/img/fruits3.jpg" alt="" height="350px"  width="390px" style="object-fit:cover; object-position:center"> </a>
+  </div>
+  
+  <div style="margin-right:50px" data-aos="zoom-out-up">
+  <h3 style="text-align:center;color:#b95d16">Fruits</h3>
+  <p style="line-height:35px;color:rgb(112, 111, 111)">  At Plantus Lot traders , we bring you the freshest, juiciest, and most nutritious fruits straight from the farm to your table. Whether you’re looking for exotic delights or everyday favorites, we ensure premium quality in every bite.
+    <br> <strong>Freshness Guaranteed:</strong> <br> We source our fruits from trusted farmers who practice sustainable and organic farming. Our quality control ensures that you receive only the best, fresh produce.
+    <br><strong>Our Export Products:</strong>   <br>
+    We offer a wide variety of fresh Seasonal fruits, Exotic fruits, Citrus fruits, Berries, Everyday essential fruits
+    Exotic fruits <br>  <strong>Export process for fruits:</strong> <br>  <strong>Sourcing & Harvesting – </strong>Fresh fruits sourced from trusted farms.
+    <br> <strong>Quality Inspection – </strong>Rigorous testing for freshness and safety. <br> <strong>Certified & Compliant –</strong> Meeting international food safety and quality standards. We adhere to strict quality control measures 
+     and certifications, ensuring that all our fruits meet global standards <br> <strong>Packing & Packaging – </strong>Customized packaging to maintain product integrity
+    <br> <strong>Logistics & Shipping – </strong>Temperature-controlled transportation for timely delivery for maximum freshness.</p>
+    
+  </div>
+  
+  </div>
+
+
+  <!-- Vegetables -->
+
+<div id="bookmark-Vegetables">
+  <div style="margin-left:40px" data-aos="zoom-out-up">
+  <h3 style="text-align:center;color:#b95d16">Vegetables</h3>
+  
+  <p style="line-height:35px;color:rgb(112, 111, 111)">At Plantus Lot traders , we specialize in exporting high-quality, fresh, and organic vegetables 
+    to markets worldwide. With a commitment to quality, sustainability, and timely delivery, we ensure that our clients receive the best produce directly from farms.<br> <strong>Our Export Products:</strong>   <br>
+     We offer a wide variety of fresh vegetables, including: Leafy Vegetables, Root Vegetables, Fruiting Vegetables, 
+     Exotic Vegetables <br>  <strong>Export process for vegetables:</strong> <br>  <strong>Sourcing & Harvesting – </strong>Fresh vegetables sourced from trusted farms.
+     <br> <strong>Quality Inspection – </strong>Rigorous testing for freshness and safety. <br> <strong>Certified & Compliant –</strong> Meeting international food safety and quality standards. We adhere to strict quality control measures 
+      and certifications, ensuring that all our vegetables meet global standards <br> <strong>Packing & Packaging – </strong>Customized packaging to maintain product integrity
+     <br> <strong>Logistics & Shipping – </strong>Temperature-controlled transportation for timely delivery for maximum freshness.
+    
+  </p>
+  </div>
+  <div style="margin-right:50px;margin-top:30px" data-aos="zoom-out-up">
+    <a href="./Productimg.html#Vegetables"><img title="Click to more" id="productimg" data-bs-toggle="tooltip" src="./img/vegetable1.jpg" alt="" height="350px"  width="450px" style="object-fit:cover; object-position:bottom"></a>
+  </div>
+  </div>
+
+
+<!--Cleaning Chemicals -->
+
+<div id="bookmark-CleaningChemicals">
+
+<div style="margin-left:50px;margin-top:30px" data-aos="zoom-out-up">
+  <a href="./Productimg.html#Cleaning"> <img title="Click to more" id="productimg" data-bs-toggle="tooltip" src="./img/Cleaning chemical.jpg" alt="" height="300px"  width="350px" style="margin-top:30px"></a>
+</div>
+
+<div style="margin-right:50px" data-aos="zoom-out-up">
+<h3 style="text-align:center;color:#b95d16">Cleaning Chemicals</h3>
+<p style="line-height:35px;color:rgb(112, 111, 111)">    Plantus Lot Traders provides effective solutions for both industrial and 
+household cleaning, offering products that deliver exceptional results with every use. Our cleaning solutions are 
+formulated with high-quality ingredients to ensure superior performance, whether tackling tough industrial grime or 
+maintaining pristine household surfaces. Designed to meet the needs of a wide range of applications, our products prioritize efficiency, 
+hygiene, and user satisfaction, making them a reliable choice for clean and healthy environment. <br>With a focus on 
+innovation and sustainability, our cleaning products are developed to be eco-friendly and safe for both users and the 
+environment. From industrial-grade cleaners that handle heavy-duty tasks to gentle yet effective solutions for household cleaning, we cater 
+to diverse requirements without compromising on quality.</p>
+</div>
+
+</div>
+
+<!-- Construction Materials -->
+
+<div id="bookmark-ConstructionMaterials">
+<div style="margin-left:50px" data-aos="zoom-out-up">
+<h3 style="text-align:center;color:#b95d16">Construction Materials</h3>
+
+<p style="line-height:35px;color:rgb(112, 111, 111)"> Plantus Lot Traders is committed to providing high-quality cement, aggregates, and other essential materials for 
+building projects of all scales. Our products are sourced from trusted suppliers and undergo rigorous quality checks to ensure durability, strength, and reliability. Whether for residential, commercial, or industrial construction, our materials meet the highest standards to support the creation of long-lasting structures.
+With a focus on consistency and excellence, we aim to be the trusted partner for all your building material needs.<br></span>
+</p>
+</div>
+<div style="margin-right:50px;margin-top:30px" data-aos="zoom-out-up">
+  <a href="./Productimg.html#Construction"> <img title="Click to more" data-bs-toggle="tooltip" id="productimg" src="./img/Construction material.jpg" alt="" height="350px"  width="450px"></a>
+</div>
+</div>
+
+
+<!--Mechanical Components-->
+
+<div id="bookmark-MechanicalComponents">
+
+<div style="margin-left:50px;margin-top:30px" data-aos="zoom-out-up">
+  <a href="./Productimg.html#Mechanical"> <img title="Click to more" id="productimg" data-bs-toggle="tooltip" src="./img/Mechanical compounent.webp" alt="" height="300px"  width="400px"> </a>
+</div>
+
+<div style="margin-right:50px" data-aos="zoom-out-up">
+<h3 style="text-align:center;color:#b95d16">Mechanical Components</h3>
+<p style="line-height:35px;color:rgb(112, 111, 111)"> Plantus Lot Traders specializes in providing precision-engineered components 
+designed for a wide range of industrial applications. Our components are meticulously crafted using the latest 
+technology and high-quality materials to ensure exceptional accuracy, durability, and performance. Whether for 
+manufacturing, machinery, or other industrial sectors, our products are designed to meet stringent standards and 
+deliver reliable results. We are dedicated to supporting industries with 
+top-tier components that enhance operational efficiency and contribute to the success of every project.</p>
+</div>
+
+</div>
+
+
+<!-- Others -->
+
+<div id="bookmark-Others" style="margin-top:100px">
+<div style="margin-left:50px" data-aos="zoom-out-up">
+<h3 style="text-align:center;color:#b95d16">Others</h3>
+
+<p style="line-height:35px;color:rgb(112, 111, 111)">  Our Plantus Lot Traders are dedicated to providing a broad range of high-quality 
+products to meet the varied needs of industries worldwide. From cleaning chemicals to construction materials and 
+mechanical components, we ensure that all our offerings are sourced and delivered with the highest standards of
+ quality and reliability. Here’s a look at the key products we export: Cleaning chemicals, Construction materials,
+  Mechanical components. Our dedication to excellence ensures that our customers receive top-tier products that 
+  contribute to efficiency and success in their respective industries.<br></span>
+</p>
+</div>
+<div style="margin-right:50px;margin-top:30px" data-aos="zoom-out-up">
+  <a href="./Productimg.html#Others">  <img title="Click to more" data-bs-toggle="tooltip" id="productimg" src="./img/others.png" alt="" height="350px"  width="350px"> </a>
+</div>
+</div>
+     
+
+
+<!-- Top scrool -->
+<button id="scrollBtn" onclick="scrollToTop()"><i class="fa-solid fa-angle-up"></i></button>
+
+<script>
+    window.onscroll = function() {
+        let scrollBtn = document.getElementById("scrollBtn");
+        if (document.documentElement.scrollTop > 100) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+ 
+<!-- Footer -->
+<div id="footerimage">
+  <div class="footer">
+    <ul style="margin-left:50px;position:relative; list-style-type:none" id="footerul">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Company</span></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Plantus_home.html">Home</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./About.html">About Us</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Brochure/Rice.pdf" target="_blank">Brochure</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html">Our Products</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Policy.html">Policy</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Contact.html">Contact Us</a></li>
+    </ul>
+
+    <ul class="footerproduct">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Our Products</span></li>
+
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-rice">Rice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-spices">Spice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-millets">Millets</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-oils">Oils</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-salt">Salts</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-health">Health</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CoconutProducts">Coconut products</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-fruits">Fruits</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Vegetables">Vegetables</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CleaningChemicals">Cleaning Chemicals</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-ConstructionMaterials">Construction Materials</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-MechanicalComponents">Mechanical Components</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Others">Others</a></li>
+
+    </ul>
+    
+    <div style="margin-top:30px">
+      <p id="address">
+        <a href="https://maps.app.goo.gl/kczAD1vzUwDPhi6X8" target="_blank"><i class="fa-solid fa-location-dot"  id="footer-icon" title="Go to Google Map" data-bs-toggle="tooltip"></i></a>Plantus Lot Traders,
+        No:13, 1st Main Rd, <br> R.V. Nagar, Block I, Annanagar East, <br> Chennai, Tamil Nadu 600102</p><br>
+
+          <p id="address"> <a href="https://globfone.com/call-phone/" target="_blank"><i class="fa-solid fa-phone" id="footer-icon" title="Phone" data-bs-toggle="tooltip"></i></a>
+            +91-9677277246 </p> <br>
+
+          <p id="address"> <a href="mailto:plantus.lottraders@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="footer-icon" title="Open Mail" data-bs-toggle="tooltip"></i></a> plantus.lottraders@gmail.com</p>
+
+          <img src="./img/QR code.png" title="Scan Location" data-bs-toggle="tooltip" alt="" style="height:100px; width:100px; margin-top:30px;">
+
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap tooltips-->
+<script>
+  // Initialize tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  </script>
+
+
+</body>
+</html>
+

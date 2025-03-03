@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantus lot Traders</title>
+    <link rel="icon" href="./img/final logo_page-0001-Photoroom.png">
+    <link rel="stylesheet" href="./Project.css">
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- animate.css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- On scrool AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Awsome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+<style>
+  html, body{
+    overflow-x:hidden;
+    width: 100%;
+    font-family: Host Grotesk, serif;
+   /* background-image: linear-gradient(to right, #FAF3E0, beige);*/
+  }
+
+
+</style>
+
+
+</head>
+<body>
+
+
+
+<!-- On scrool script-->
+  <script>
+    AOS.init();
+  </script>
+
+
+  <!-- <div class="mainpop"> -->
+    <div class="container-fluid headdum" style="padding:1px 10px">
+      <div class="d-flex justify-content-between align-items-center">
+          <!-- Menu Button (Left) -->
+          <button id="menu-btn" class="menu-btn">☰</button>
+
+          <!-- Centered Menu -->
+          <div id="menu-bar" class="animate__animated animate__fadeInLeft">
+              <ul id="add">
+                  <li><a href="./Plantus_home.html">HOME</a></li>
+                  <li><a href="./About.html">ABOUT US</a></li>
+                  <li><a href="./Brochure/Rice.pdf" target="_blank">BROCHURE</a></li>
+                  <li><a href="./Product.html">OUR PRODUCTS</a></li>
+                  <li><a href="./Policy.html">POLICY</a></li>
+                  <li><a href="./Contact.html">CONTACT US</a></li>
+              </ul>
+          </div>
+
+          <!-- Logo & Company Name (Right) -->
+          <div class="d-flex align-items-center gap-3">
+              <img src="./img/final logo img.jpg" alt="logo" class="logo">
+              <span class="companyname mt-2">Plantus Lot Traders</span>
+          </div>
+      </div>
+    </div>
+
+  <style>
+
+      @media only screen and (max-width: 600px) {
+          .companyname {background: black;
+                      font-size:18px;
+                      padding-left: 0px;
+          }
+          .logo{
+              height: 50px;
+              width: 65px;
+          }
+          body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        }
+  </style>
+
+  <!--  Menu Bar script optional
+  <script>
+      const menuButton = document.getElementById("menu-btn");
+      const menuBar = document.getElementById("menu-bar");
+
+      // Toggle menu visibility
+      menuButton.addEventListener("click", () => {
+          menuBar.style.display = (menuBar.style.display === "block") ? "none" : "block";
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (event) => {
+          if (!menuButton.contains(event.target) && !menuBar.contains(event.target)) {
+              menuBar.style.display = "none";
+          }
+      });
+  </script> -->
+
+  <script>
+      const menuButton = document.getElementById("menu-btn");
+      const menuBar = document.getElementById("menu-bar");
+  
+      // Toggle the menu bar when the button is clicked
+      menuButton.addEventListener("click", () => {
+        if (menuBar.style.display === "block") {
+          menuBar.style.display = "none";
+        } else {
+          menuBar.style.display = "block";
+  
+          // Automatically close the menu after 10 seconds  
+          setTimeout(() => {
+            menuBar.style.display = "none";
+          }, 20000); // 10 seconds
+        }
+      });
+  
+      // Close the menu bar when any menu item is clicked
+      const menuItems = menuBar.querySelectorAll("a");
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          menuBar.style.display = "none";
+        });
+      });
+    </script>
+
+    
+
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img id="img" src="./img/Cinnamon Stick.jpg" alt="Cinnamon" class="bg-img-1" style="width:100%; height:400px; filter: brightness(80%); object-fit:cover">
+        <div class="carousel-caption"  >
+            <h3 class="animate__animated animate__fadeInUp">Cinnamon Stick</h3>
+            <p id="carousel-para" class="animate__animated animate__fadeInUpBig">Cinnamon is potential anti-inflammatory, antioxidant, and blood sugar-regulating properties</p>
+                <a id="carodel" href="#ourpruduct" class="animate__animated animate__fadeInUpBig">More About</a><br><br>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img id="img" src="./img/rice.jpg" alt="rice" class="bg-img-2" style="width:100%; height:400px; filter: brightness(80%)">
+        <div class="carousel-caption">
+            <h3 class="animate__animated animate__fadeInUp"> Rice</h3>
+            <p id="carousel-para" class="animate__animated animate__fadeInUpBig">Premium varieties, including Basmati, Jasmine, and more, to meet diverse culinary needs. 
+                </p>
+                <a id="carodel" href="#ourpruduct" class="animate__animated animate__fadeInUpBig">More About</a>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img id="img" src="./img/Millets.jpg" alt="New York" class="bg-img-3" style="width:100%; height:400px; filter: brightness(100%)">
+        <div class="carousel-caption">
+            <h3 class="animate__animated animate__fadeInUp">Millets</h3>
+            <p id="carousel-para" class="animate__animated animate__fadeInUpBig">Nutritious and versatile millets like Barnyard, Finger, and Foxtail for healthy diets.</p>
+                <a id="carodel" href="#ourpruduct" class="animate__animated animate__fadeInUpBig">More About</a>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img id="img" src="./img/oils.jpg" alt="New York" class="bg-img-3" style="width:100%; height:400px; filter: brightness(90%); object-fit:cover">
+        <div class="carousel-caption">
+            <h3 class="animate__animated animate__fadeInUp">Oils</h3>
+            <p id="carousel-para" class="animate__animated animate__fadeInUpBig">Natural oils, including coconut oil, gingelly oil, groundnut oil, and sunflower oil, for cooking and health benefits</p>
+                <a id="carodel" href="#ourpruduct" class="animate__animated animate__fadeInUpBig" >More About</a>
+          </div>
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+<div>
+</div>
+</div>
+
+
+<!-- About  old code-->
+  <!-- <div id="aboutcontent" class="container" style="display: flex; align-items: flex-start; gap: 80px; padding: 10px;">
+    <div class="image-section" style="flex: 1; max-width: 50%;">
+      <img class="imgbody" src="./img/wheat.jpg" alt="Product Home" style="width: 300px; height:300px; padding: 5px; filter:brightness(95%); object-fit:cover">
+    </div>
+    <div class="text-section" style="flex: 2;">
+      <h2 id="about">About</h2>
+      <h3>Plantus Lot Traders</h3>
+      <p style="margin:0px; line-height:35px" data-aos="zoom-out-up">
+        Our company, Plantus Lot Traders, is committed to offering a diverse range of high-quality products 
+        to meet the needs of industries and consumers worldwide. We specialize in a wide array of products, 
+        including premium spices, rice, millets, oils, salts, and coconut products, as well as essential industrial 
+        goods such as cleaning chemicals, construction materials, and mechanical components. 
+        <span id="none" style="display: none;">
+          <br> Each product is carefully sourced and processed to ensure the highest standards of quality, reliability, and sustainability. 
+          Whether you're looking for culinary essentials, health products, or industrial solutions, Plantus Lot Traders delivers 
+          excellence across all sectors. Our product offerings include: Spices, Rice, Millets, Oils, Salts, Coconut Products, 
+          Cleaning Chemicals, Construction Materials, and Mechanical Components. At Plantus Lot Traders, we are passionate about 
+          delivering the best products to our customers, ensuring satisfaction and quality in every order.
+        </span>
+      </p>
+      <a data-aos="zoom-out-up" href="javascript:void(0);" class="read-more-btn" id="btnclr">Read More</a>
+    </div>
+  </div> -->
+
+<!-- About  New code with responsive --> 
+
+<div class="container" id="aboutcontent">
+  <div class="row">
+    <div class="col-12   col-md-6 col-lg-mx-5">
+      <img class="imgbody" src="./img/wheat.jpg" alt="Product Home" style="width: 300px; height:300px; padding: 5px; filter:brightness(95%); object-fit:cover">
+
+    </div>
+    <div class="text-section pt-4 col-12 col-md-6">
+      <h2 id="about">About</h2>
+      <h3>Plantus Lot Traders</h3>
+      <p style="margin:0px; line-height:35px" data-aos="zoom-out-up">
+        Our company, Plantus Lot Traders, is committed to offering a diverse range of high-quality products 
+        to meet the needs of industries and consumers worldwide. We specialize in a wide array of products, 
+        including premium spices, rice, millets, oils, salts, and coconut products, as well as essential industrial 
+        goods such as cleaning chemicals, construction materials, and mechanical components. 
+        <span id="none" style="display: none;">
+          <br> Each product is carefully sourced and processed to ensure the highest standards of quality, reliability, and sustainability. 
+          Whether you're looking for culinary essentials, health products, or industrial solutions, Plantus Lot Traders delivers 
+          excellence across all sectors. Our product offerings include: Spices, Rice, Millets, Oils, Salts, Coconut Products, 
+          Cleaning Chemicals, Construction Materials, and Mechanical Components. At Plantus Lot Traders, we are passionate about 
+          delivering the best products to our customers, ensuring satisfaction and quality in every order.
+        </span>
+      </p>
+      <a data-aos="zoom-out-up" href="javascript:void(0);" class="read-more-btn" id="btnclr">Read More</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Home about script -->
+<script>
+  const hiddenContent = document.getElementById("none");
+  const toggleBtn = document.getElementById("btnclr");
+
+  toggleBtn.addEventListener("click", () => {
+    if (hiddenContent.style.display === "none") {
+      hiddenContent.style.display = "inline";
+      toggleBtn.textContent = "Read Less"; // Change button text
+    } else {
+      hiddenContent.style.display = "none";
+      toggleBtn.textContent = "Read More"; // Revert button text
+    }
+  });
+</script>
+
+
+
+<section class="products" id="ourpruduct">
+    <h2>What We Offer</h2>
+    <h3>Our Products</h3>
+    <div class="product-grid">
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/spices logo.png" alt="Spice Icon" height="60px" width="10px">
+        <h4 id="spice_target">Spice</h4>
+        <!-- <p>Green cardamom, Black cardamom, Black pepper, white Pepper, 
+            Bulb turmeric, Finger turmeric, Carom, Cinnamon stick, Clove, Coriander seed, 
+            cumin powder, Dry bay leaf, Fennel seed, Fenugreek seed, Javitri or Mace, Nutmeg, Red chilly, Star anise , 
+            Tamarid cake, Tamarid Disc etc.</p> -->
+      
+            <p>A wide range of aromatic, high-quality spices to enhance the flavor of your dishes</p>
+      <a href="./Product.html#bookmark-spices" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/rice bag.png" alt="Food Grains Icon" height="60px" width="1000px">
+        <h4>Rice</h4>
+        <!-- <p>Basmati rice, Brown basmati rice, Jasmine rice, parboiled rice, ponni 
+            rice, Poongar rices, Red rice, sona masuri, Wild elephant rice etc</p> -->
+            <p>Premium varieties, including Basmati, Jasmine, and more, to meet diverse culinary needs.</p>
+        <a href="./Product.html#bookmark-rice" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/Milletslogo.jpg" alt="Tea Icon">
+        <h4>Millets</h4>
+        <!-- <p>Barnyard millet , Finger millet , Foxtail millet seeds, Jowar millet, Kodo millet, Little Millet, Pearl millet, proso millet, wheat, Urad dal etc.</p> -->
+         <p>Nutritious and versatile millets like Barnyard, Finger, and Foxtail for healthy diets.</p>
+        <a href="./Product.html#bookmark-millets" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/fat.png" alt="Pulses Icon">
+        <h4>Oils</h4>
+        <!-- <p>Coconut oil, Gingelly oil, Groundnut oil, Sunflower oil</p> -->
+         <p>Natural oils, including coconut oil, gingelly oil, groundnut oil, 
+          and sunflower oil, for cooking and health benefits</p>
+        <a href="./Product.html#bookmark-oils" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/salt.png" alt="Agro Feed Icon">
+        <h4>Salts</h4>
+        <!-- <p>Rock, Sand.</p> -->
+         <p>Pure rock salt and sand salt for all your culinary and health needs.</p>
+        <a href="/Product.html#bookmark-salt" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/Health powder.png" alt="Agro Feed Icon">
+        <h4>Health</h4>
+        <p>Health mix, Moringa powder, Red saffron threads</p>
+        <a href="./Product.html#bookmark-health" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/coconut-tree.png" alt="Agro Feed Icon">
+        <h4 style="color: #b95d16">Coconut products</h4>
+        <!-- <p>Coconut, Coconut coir, cocopeat block, cocopeat disc, Tender Coconuts</p> -->
+         <p>Fresh coconuts, coconut coir, cocopeat, and tender 
+          coconuts from our own coconut plantations.</p>
+        <a href="./Product.html#bookmark-CoconutProducts" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/fruits icon.png" alt="Agro Feed Icon">
+        <h4 style="color: #b95d16">Fruits</h4>
+         <p>Effective solutions for industrial and household cleaning.</p>
+        <a href="./Product.html#bookmark-fruits" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/vegetables icon.png" alt="Agro Feed Icon">
+        <h4 style="color: #b95d16">Vegetables</h4>
+         <p>We offer a wide variety of fresh vegetables, including: Leafy Vegetables, Root Vegetables ect.., 
+          </p>
+        <a href="./Product.html#bookmark-Vegetables" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/Cleaning chemicals.png" alt="Agro Feed Icon">
+        <h4 style="color: #b95d16">Cleaning Chemicals</h4>
+         <p>Effective solutions for industrial and household cleaning.</p>
+        <a href="./Product.html#bookmark-CleaningChemicals" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/cementbag.png" alt="Agro Feed Icon">
+        <h4 style="color: #b95d16">Construction Materials</h4>
+         <p>High-quality cement, aggregates, and other materials for building projects.</p>
+        <a href="./Product.html#bookmark-ConstructionMaterials" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/Mechanical Components.png" alt="Agro Feed Icon">
+        <h4 style="color: #b95d16">Mechanical Components</h4>
+         <p>Precision-engineered components for various industrial applications.</p>
+        <a href="./Product.html#bookmark-MechanicalComponents" id="cardimg">Learn More</a>
+      </div>
+      <div class="product-card" data-aos="zoom-out-up" data-aos-delay="200">
+        <img src="./img/Others logo.png" alt="Agro Feed Icon">
+        <h4 style="color: #b95d16">Others</h4>
+         <p>Our Plantus Lot Traders are dedicated to providing a broad range of high-quality products to meet the 
+          varied needs of industries worldwide</p>
+        <a href="./Product.html#bookmark-Others" id="cardimg">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Top scrool -->
+<button id="scrollBtn" onclick="scrollToTop()"><i class="fa-solid fa-angle-up"></i></button>
+
+<script>
+    window.onscroll = function() {
+        let scrollBtn = document.getElementById("scrollBtn");
+        if (document.documentElement.scrollTop > 100) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+<!-- Footer -->
+<div id="footerimage">
+  <div class="footer">
+    <ul style="margin-left:50px;position:relative; list-style-type:none" id="footerul">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Company</span></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Plantus_home.html">Home</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./About.html">About Us</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Brochure/Rice.pdf" target="_blank">Brochure</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html">Our Products</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Policy.html">Policy</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Contact.html">Contact Us</a></li>
+    </ul>
+
+    <ul class="footerproduct">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Our Products</span></li>
+
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-rice">Rice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-spices">Spice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-millets">Millets</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-oils">Oils</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-salt">Salts</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-health">Health</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CoconutProducts">Coconut products</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-fruits">Fruits</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Vegetables">Vegetables</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CleaningChemicals">Cleaning Chemicals</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-ConstructionMaterials">Construction Materials</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-MechanicalComponents">Mechanical Components</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Others">Others</a></li>
+
+    </ul>
+    
+    <div style="margin-top:30px">
+      <p id="address">
+        <a href="https://maps.app.goo.gl/kczAD1vzUwDPhi6X8" target="_blank"><i class="fa-solid fa-location-dot"  id="footer-icon" title="Go to Google Map" data-bs-toggle="tooltip"></i></a>Plantus Lot Traders,
+        No:13, 1st Main Rd, <br> R.V. Nagar, Block I, Annanagar East, <br> Chennai, Tamil Nadu 600102</p><br>
+
+          <p id="address"> <a href="https://globfone.com/call-phone/" target="_blank"><i class="fa-solid fa-phone" id="footer-icon" title="Phone" data-bs-toggle="tooltip"></i></a>
+            +91-9677277246 </p> <br>
+
+          <p id="address"> <a href="mailto:plantus.lottraders@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="footer-icon" title="Open Mail" data-bs-toggle="tooltip"></i></a> plantus.lottraders@gmail.com</p>
+
+          <img src="./img/QR code.png" title="Scan Location" data-bs-toggle="tooltip" alt="" style="height:100px; width:100px; margin-top:30px;">
+
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap tooltips-->
+<script>
+  // Initialize tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  </script>
+
+  
+</body>
+</html>
+
+    

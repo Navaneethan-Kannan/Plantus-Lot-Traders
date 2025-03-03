@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantus lot Traders</title>
+    <link rel="icon" href="./img/final logo_page-0001-Photoroom.png">
+    <link rel="stylesheet" href="./Project.css">
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- animate.css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- On scrool -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Awsome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
+        <!-- jQuery (Required) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<style>
+  .abtmain{
+    display: flex;
+    gap: 90px;
+    margin-left:40px;
+    margin-right: 20px;
+    margin-top: 50px;
+  }
+  .abtcontent{
+    line-height: 35px;
+    color: #5a5959;
+    
+  }
+  .abouthead{
+    text-align: start;
+    margin-top:0px;
+    border-bottom: 2px solid #b95d16;
+    display: inline-grid;
+  }
+  .headimg{
+   height:520px;
+   width:400px;
+   object-fit: cover;
+  }
+  
+  .IntQua{
+    margin-top: 80px;
+    display: flex;
+    justify-content:space-around;
+  }
+
+  #subdiv{
+    width: 400px;
+  }
+
+  .id{
+    width: 400px;
+    display: block;
+    margin: 50px auto; /* Centers the div horizontally */
+    text-align: center;
+  }
+
+  .visiondiv{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 5px;
+    gap: 150px;
+    justify-content: center;
+    height:500px;
+  }
+  .assist{
+    background-image:url("./img/Mobile.jpg");/*linear-gradient(to right, #cacaca, #ffffff)*/;
+    text-align: center;
+    padding: 10px 0px;
+    background-position: cover;
+    opacity: 0.9;
+    margin-top: 20px;
+    border-top: 0px dotted black;
+
+  }
+
+  #icons{
+    padding-bottom: 60px;
+    padding-top: 30px;
+    font-size: 60px;
+    color:white;
+}
+
+#title{
+  font-size:25px;
+  color:rgb(6, 2, 39);
+  font-weight:bold;
+  margin-top: 20px;
+}
+.choose {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#hoverDiv {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #333;
+    cursor: pointer;
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #a9cbd1;/*rgb(0, 80, 121);*/
+    /*background-image:linear-gradient(135deg, #54CAB3, #54CAB3);*/
+    transition: background-color 0.4s ease;
+    outline: 1px solid white;
+    transition: 0.2s;
+}
+
+#content {
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Hide content smoothly before showing new content */
+#hoverDiv:hover #content {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+#hoverDiv:hover{
+  border: 2px solid #ffffff;
+  outline:5px solid black ;
+  background-color:#edeaea;
+
+}
+#hoverDiv1:hover{
+  border: 2px solid #ffffff;
+  outline:5px solid black;
+  background-color:#edeaea;
+
+
+}
+#hoverDiv2:hover{
+  border: 2px solid #ffffff;
+  outline:5px solid black;
+  background-color:#edeaea;
+
+
+}
+#hoverDiv3:hover{
+  border: 2px solid #ffffff;
+  outline:5px solid black;
+  background-color:#edeaea;
+
+
+}
+
+/* Show content smoothly when mouse leaves */
+#hoverDiv:not(:hover) #content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#hoverDiv1 {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #333;
+    cursor: pointer;
+    height: 350px;
+    width: 250px;
+    transition: background-color 0.4s ease;
+    border-radius: 20px;
+    background-color: #a9cbd1;
+    transition: 0.2s;
+
+
+}
+
+#content1 {
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Hide content smoothly before showing new content */
+#hoverDiv1:hover #content1 {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* Show content smoothly when mouse leaves */
+#hoverDiv1:not(:hover) #content1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+#hoverDiv2 {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #333;
+    cursor: pointer;
+    height: 350px;
+    width: 250px;
+    transition: background-color 0.4s ease;
+    background-color: #a9cbd1;
+    border-radius: 20px;
+    transition: 0.2s;
+
+
+
+}
+
+#content2 {
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Hide content smoothly before showing new content */
+#hoverDiv2:hover #content1 {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* Show content smoothly when mouse leaves */
+#hoverDiv2:not(:hover) #content1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+#hoverDiv3 {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #333;
+    cursor: pointer;
+    height: 350px;
+    width: 250px;
+    transition: background-color 0.4s ease;
+    background-color: #a9cbd1;
+    border-radius: 20px;
+    transition: 0.2s;
+
+
+
+}
+
+#content3 {
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Hide content smoothly before showing new content */
+#hoverDiv3:hover #content3 {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* Show content smoothly when mouse leaves */
+#hoverDiv3:not(:hover) #content3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Carosel*/
+.owl-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.owl-nav button {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+#cerimg{
+  width: 300px;
+  padding-left: 60px;
+}
+
+.Certificationsbox{
+  background-color: rgb(190, 190, 190);
+}
+#assisttext{
+  color:white
+}
+</style>
+
+</head>
+<body style="overflow-x:hidden; font-family: Host Grotesk, serif;">
+
+<!-- On scrool script-->
+  <script>
+    AOS.init();
+  </script>
+
+ 
+
+
+  
+  <!-- <div class="mainpop"> -->
+    <div class="container-fluid headdum" style="padding:1px 10px">
+      <div class="d-flex justify-content-between align-items-center">
+          <!-- Menu Button (Left) -->
+          <button id="menu-btn" class="menu-btn">☰</button>
+
+          <!-- Centered Menu -->
+          <div id="menu-bar" class="animate__animated animate__fadeInLeft">
+              <ul id="add">
+                  <li><a href="./Plantus_home.html">HOME</a></li>
+                  <li><a href="./About.html">ABOUT US</a></li>
+                  <li><a href="./Brochure/Rice.pdf" target="_blank">BROCHURE</a></li>
+                  <li><a href="./Product.html">OUR PRODUCTS</a></li>
+                  <li><a href="./Policy.html">POLICY</a></li>
+                  <li><a href="./Contact.html">CONTACT US</a></li>
+              </ul>
+          </div>
+
+          <!-- Logo & Company Name (Right) -->
+          <div class="d-flex align-items-center gap-3">
+              <img src="./img/final logo img.jpg" alt="logo" class="logo">
+              <span class="companyname mt-2">Plantus Lot Traders</span>
+          </div>
+      </div>
+  </div>
+
+  <style>
+
+      @media only screen and (max-width: 600px) {
+          .companyname {background: black;
+                      font-size:18px;
+                      padding-left: 0px;
+          }
+          .logo{
+              height: 50px;
+              width: 65px;
+          }
+        }
+  </style>
+
+  <!-- <script>
+      const menuButton = document.getElementById("menu-btn");
+      const menuBar = document.getElementById("menu-bar");
+
+      // Toggle menu visibility
+      menuButton.addEventListener("click", () => {
+          menuBar.style.display = (menuBar.style.display === "block") ? "none" : "block";
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (event) => {
+          if (!menuButton.contains(event.target) && !menuBar.contains(event.target)) {
+              menuBar.style.display = "none";
+          }
+      });
+  </script> -->
+
+  <script>
+      const menuButton = document.getElementById("menu-btn"); // Corrected selector
+      const menuBar = document.getElementById("menu-bar");
+  
+      // Toggle the menu bar when the button is clicked
+      menuButton.addEventListener("click", () => {
+        if (menuBar.style.display === "block") {
+          menuBar.style.display = "none";
+        } else {
+          menuBar.style.display = "block";
+  
+          // Automatically close the menu after 10 seconds
+          setTimeout(() => {
+            menuBar.style.display = "none";
+          }, 20000); // 10 seconds
+        }
+      });
+  
+      // Close the menu bar when any menu item is clicked
+      const menuItems = menuBar.querySelectorAll("a");
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          menuBar.style.display = "none";
+        });
+      });
+    </script>
+    
+
+    <!-- About -->
+
+    <!-- <h1 style="margin-left:39%;color:#b95d16;" class="abouthead">About Us</h1> -->
+
+  
+    <div class="abtmain container">
+      <div class="row align-items-center">
+        <div class="col-12  col-md-12 text-align-center col-lg-6">
+          <img class="headimg" src="./img/aboutimg.jpg" alt="">
+        </div>
+
+        <div class="pt-4 col-12 col-md-12 col-lg-6">
+          <h1 style="margin-left:0%;color:#b95d16;" class="abouthead">About Us</h1> 
+          <h4>Plantus Lot Traders</h4>
+          <p class="abtcontent">Our company, Plantus Lot Traders, is committed to offering a diverse range of high-quality products to meet the 
+            needs of industries and consumers worldwide. We specialize in a wide array of products, including premium spices, rice, millets, oils, salts, and coconut products, as well as essential industrial goods such as cleaning chemicals, construction materials, and mechanical components.
+          <br> Each product is carefully sourced and processed to ensure the highest standards of quality, reliability, and 
+            sustainability. Whether you're looking for culinary essentials, health products, or industrial solutions, Plantus Lot Traders delivers excellence across all sectors. Our product offerings include: Spices, Rice, Millets, Oils, Salts, Coconut Products, Cleaning Chemicals, Construction Materials, and Mechanical Components. At Plantus Lot Traders, we are passionate about
+            delivering the best products to our customers, ensuring satisfaction and quality in every order.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="abtmain container">
+      <div class="row align-items-center">
+         Image Section
+        <div class="col-12 col-lg-6 col-md-6 order-1 order-lg-1 text-center">
+          <img class="headimg img-fluid w-100" src="./img/aboutimg.jpg" alt="About Us">
+        </div>
+    
+         Text Section 
+        <div class="pt-4 col-12 col-lg-6 col-md-6 order-2 order-lg-2 text-center text-lg-start">
+          <h1 style="color:#b95d16;" class="abouthead">About Us</h1> 
+          <h4>Plantus Lot Traders</h4>
+          <p class="abtcontent">
+            Our company, Plantus Lot Traders, is committed to offering a diverse range of high-quality products to meet the 
+            needs of industries and consumers worldwide. We specialize in a wide array of products, including premium spices, rice, millets, oils, salts, and coconut products, as well as essential industrial goods such as cleaning chemicals, construction materials, and mechanical components.
+            <br> Each product is carefully sourced and processed to ensure the highest standards of quality, reliability, and 
+            sustainability. Whether you're looking for culinary essentials, health products, or industrial solutions, Plantus Lot Traders delivers excellence across all sectors.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    
+
+  <div class="assist">
+    <h3 style="color:#e06a0f">How Can We Assist You?</h3>
+    <p id="assisttext">We are always ready to help with your queries and concerns</p>
+    <p id="assisttext">Feel free to reach out to us anytime for support and guidance.</p>
+    <p id="assisttext"><i class="fa-solid fa-phone" id="footer-icon" title="Phone" data-bs-toggle="tooltip"></i> +91-9677277246</p>
+    <p id="assisttext"> <a href="mailto:plantus.lottraders@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="footer-icon" title="Open Mail" data-bs-toggle="tooltip"></i></a> plantus.lottraders@gmail.com</p>
+
+  </div>
+  
+
+  
+
+  <!-- vision and misssion -->
+    <div class="visiondiv">
+      <div style="height:490px; width:400px; background-color:rgb(157, 252, 245);">
+        <img src="./img/vision.jpg" alt="" height="200px" width="200px">
+        <h2 style="color:#161615;margin-top:20px">Vision</h2>
+        <p style="line-height: 35px;color:rgb(126, 124, 124)" class="animate__animated animate__fadeInUp">To be a globally recognized export company known for excellence in quality, 
+          service, and value, ensuring the satisfaction of both our customers and employees.</p>
+
+      </div>
+      <div style="height:490px; width:400px; background-color:rgb(239, 120, 250)">
+        <img src="./img/mission.jpg" alt="" height="200px" width="200px">
+        <h2 style="color:#1d1d1c;margin-top:20px">Mission</h2>
+          <dl style="line-height: 35px; color:rgb(100, 100, 100);" class="animate__animated animate__fadeInUp">
+            <dt></dt>
+            <dd><i class="fa-solid fa-check" style="color: #1a1b1b; "></i> To provide high-quality products that deliver exceptional value to our customers</dd>
+            <dd><i class="fa-solid fa-check" style="color: #030303;"></i> To cultivate a positive and rewarding work environment for our employees. </dd>
+            <dd><i class="fa-solid fa-check" style="color: #030303;"></i> To contribute to the advancement of society as our business grows.
+            </dd>
+          </dl>
+      </div>
+    </div>
+
+<div style="background-color:#f1f1f1; padding-bottom:50px">
+    <h1 style="text-align:center;margin-top:70px;color:#b95d16">Our Values & Beliefs</h1>
+      <div class="IntQua">
+          <div id="subdiv">
+            <img src="./img/quality.png" alt="" height="50px" width="50px" style="margin-left: 30%">
+            <h3 style="display:inline">Quality</h3>
+            <p style="color:#646363;margin-top:10px">Delivering the best products and services is our top priority. We believe that a commitment to quality 
+              builds trust and strengthens relationships with our valued customers.</p>
+          </div>
+
+          <div id="subdiv">
+              <img src="./img/employees.png" alt="" height="50px" width="50px" style="margin-left: 30%">
+              <h3 style="display:inline">Integrity</h3>
+              <p style="color:#646363;margin-top:10px">We uphold respect for our customers, employees, community, and the environment. We believe that fostering a safe,
+                ethical, and enjoyable workplace enhances employee performance and contributes to long-term success.
+              </p>
+          </div>
+      </div>
+
+
+  <div class="id">
+    <img src="./img/handshake.png" alt="" height="50px" width="50px" style="margin-left: 30%;">
+    <h3 style="display:inline">Service</h3>
+    <p style="color:#646363;margin-top:10px">Customer satisfaction is at the heart of our success. By understanding and meeting our customer’s needs, we provide 
+      outstanding products and services. 
+      We are committed to exceptional service, making our customers feel valued and confident in our brand.</p>
+  </div>
+
+</div>
+<!-- Why Choose Us -->
+<div class="choose">
+  <div id="hoverDiv">
+      <p id="content"><i class="fa-solid fa-shop" id="icons"></i> <br><span id="title">Product Sourcing</span> </p>
+  </div>
+
+  <div id="hoverDiv1">
+      <p id="content1"><i class="fa-solid fa-shield" id="icons"></i> <br><span id="title">Documentation & Compliance</span> </p>
+  </div>
+
+  <div id="hoverDiv2">
+      <p id="content2"><i class="fa-solid fa-truck-fast" id="icons"></i> <br><span id="title"> Efficient Logistics & Shipping</span></p>
+  </div>
+
+
+  <div id="hoverDiv3">
+      <p id="content3"><i class="fa-solid fa-star" id="icons"></i> <br><span id="title"> Quality Assurance</span></p>
+  </div>
+</div>
+
+<script>
+
+  let div = document.getElementById("hoverDiv");
+  let p = document.getElementById("content");
+
+  // Store the original HTML content (including the icon)
+  let originalContent = '<i class="fa-solid fa-shop" id="icons"></i> <br><span id="title">Product Sourcing</span>';
+
+  div.addEventListener("mouseover", function() {
+      p.style.opacity = "0"; // Hide the content before changing text
+      setTimeout(() => {
+          p.innerText = "Discover premium Indian products with our expert sourcing services. We ensure exceptional quality, competitive pricing, and adherence to your specifications for a seamless and satisfying experience.";
+          p.style.opacity = "1";
+          p.style.lineHeight = "2";
+          p.style.marginTop = "20px"// Show new content smoothly
+      }, 300); // Delay change slightly for smooth effect
+  });
+
+  div.addEventListener("mouseout", function() {
+      p.style.opacity = "0"; // Hide the content before restoring original text
+      setTimeout(() => {
+          p.innerHTML = originalContent;  // Restore the original icon + text
+          p.style.opacity = "1"; // Show original content smoothly
+      }, 300);
+  });
+</script>
+
+
+
+
+<script>
+  let div1 = document.getElementById("hoverDiv1");
+  let p1 = document.getElementById("content1");
+
+  // Store the original HTML content (including the icon)
+  let originalContent1 = '<i class="fa-solid fa-shield" id="icons"></i> <br><span id="title">Documentation & Compliance</span>'; 
+
+  div1.addEventListener("mouseover", function() {
+      p1.style.opacity = "0"; // Hide the content before changing text
+      setTimeout(() => {
+          p1.innerText = "Our team simplifies export regulations, handling documentation, customs, and compliance efficiently. We ensure your shipments are prepared and delivered smoothly, freeing you from logistical complexities.";
+          p1.style.opacity = "1"; 
+          p1.style.lineHeight = "2"
+          p1.style.marginTop = "20px"// Show new content smoothly
+      }, 300); // Delay change slightly for smooth effect
+  });
+
+  div1.addEventListener("mouseout", function() {
+      p1.style.opacity = "0"; // Hide the content before restoring original text
+      setTimeout(() => {
+          p1.innerHTML = originalContent1;  // Restore the original icon + text
+          p1.style.opacity = "1"; // Show original content smoothly
+      }, 300);
+  });
+</script>
+
+
+
+<script>
+  let div2 = document.getElementById("hoverDiv2");
+  let p2 = document.getElementById("content2");
+
+  // Store the original HTML content (including the icon)
+  let originalContent2 = '<i class="fa-solid fa-truck-fast" id="icons"></i> <br><span id="title"> Efficient Logistics & Shipping</span>';  
+
+  div2.addEventListener("mouseover", function() {
+      p2.style.opacity = "0"; // Hide the content before changing text
+      setTimeout(() => {
+          p2.innerText = "Partnering with top freight providers, we ensure secure and timely deliveries. Our robust logistics network handles orders of any size or complexity, offering reliability and peace of mind.";
+          p2.style.opacity = "1";
+          p2.style.lineHeight = "2"
+          p2.style.marginTop = "10px" // Show new content smoothly
+      }, 300); // Delay change slightly for smooth effect
+  });
+
+  div2.addEventListener("mouseout", function() {
+      p2.style.opacity = "0"; // Hide the content before restoring original text
+      setTimeout(() => {
+          p2.innerHTML = originalContent2;  // Restore the original icon + text
+          p2.style.opacity = "1"; // Show original content smoothly
+      }, 300);
+  });
+</script>
+
+
+
+<script>
+  let div3 = document.getElementById("hoverDiv3");
+  let p3 = document.getElementById("content3");
+
+  // Store the original HTML content (including the icon)
+  let originalContent3 = '<i class="fa-solid fa-star" id="icons"></i> <br><span id="title"> Quality Assurance</span>';
+
+  div3.addEventListener("mouseover", function() {
+      p3.style.opacity = "0"; // Hide the content before changing text
+      setTimeout(() => {
+          p3.innerText = "Stringent quality checks guarantee our products meet international standards. We are dedicated to exceeding your expectations with unmatched reliability and premium goods in every shipment.";
+          p3.style.opacity = "1";
+          p3.style.lineHeight = "2" 
+          p3.style.marginTop = "20px"// Show new content smoothly
+      }, 300); // Delay change slightly for smooth effect
+  });
+
+  div3.addEventListener("mouseout", function() {
+      p3.style.opacity = "0"; // Hide the content before restoring original text
+      setTimeout(() => {
+          p3.innerHTML = originalContent3;  // Restore the original icon + text
+          p3.style.opacity = "1"; // Show original content smoothly
+      }, 300);
+  });
+</script>
+<!-- Why choose us end -->
+
+<!-- Owl carousel -->
+
+
+<script>
+  $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+          loop: true,           // Infinite loop
+          margin: 5,           // Space between items
+          nav: false,            // Show navigation arrows
+          dots: true,           // Show dot indicators
+          autoplay: true,       // Enable auto sliding
+          autoplayTimeout: 3000,// Auto slide every 3 seconds
+          responsive:{
+              0:{ items: 1 },   // 1 item for small screens
+              600:{ items: 2 }, // 2 items for medium screens
+              1000:{ items: 3 } // 3 items for large screens
+          }
+      });
+  });
+</script>
+
+<style>
+  .Certifications{
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+</style>
+
+ 
+
+<div class="Certificationsbox">
+    <div class="Certifications">
+      <h2 style="font-size:xxx-large"> Our Certifications </h2>
+    </div>
+    <div class="owl-carousel" style="margin-top:50px;">
+      <div><img id="cerimg" src="./Certificationsimg/Certifications1.png" alt="Image 1"></div>
+      <div><img id="cerimg" src="./Certificationsimg/Certifications2.png" alt="Image 2"></div>
+      <div><img id="cerimg" src="./Certificationsimg/Certifications3.png" alt="Image 3"></div>
+      <div><img id="cerimg" src="./Certificationsimg/Certifications4.png" alt="Image 4"></div>
+      <div><img id="cerimg" src="./Certificationsimg/Certifications5.png" alt="Image 5"></div>
+      <div><img id="cerimg" src="./Certificationsimg/Certifications6.png" alt="Image 6"></div>
+      <div><img id="cerimg" src="./Certificationsimg/Certifications7.png" alt="Image 7"></div>
+    </div>
+</div>
+
+
+
+<!-- Top scrool -->
+<button id="scrollBtn" onclick="scrollToTop()"><i class="fa-solid fa-angle-up"></i></button>
+
+<script>
+    window.onscroll = function() {
+        let scrollBtn = document.getElementById("scrollBtn");
+        if (document.documentElement.scrollTop > 100) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+
+<!-- Footer -->
+<div id="footerimage">
+  <div class="footer">
+    <ul style="margin-left:50px;position:relative; list-style-type:none" id="footerul">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Company</span></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Plantus_home.html">Home</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./About.html">About Us</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Brochure/Rice.pdf" target="_blank">Brochure</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html">Our Products</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Policy.html">Policy</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Contact.html">Contact Us</a></li>
+    </ul>
+
+    <ul class="footerproduct">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Our Products</span></li>
+
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-rice">Rice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-spices">Spice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-millets">Millets</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-oils">Oils</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-salt">Salts</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-health">Health</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CoconutProducts">Coconut products</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-fruits">Fruits</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Vegetables">Vegetables</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CleaningChemicals">Cleaning Chemicals</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-ConstructionMaterials">Construction Materials</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-MechanicalComponents">Mechanical Components</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Others">Others</a></li>
+
+    </ul>
+    
+    <div style="margin-top:30px">
+      <p id="address">
+        <a href="https://maps.app.goo.gl/kczAD1vzUwDPhi6X8" target="_blank"><i class="fa-solid fa-location-dot"  id="footer-icon" title="Go to Google Map" data-bs-toggle="tooltip"></i></a>Plantus Lot Traders,
+        No:13, 1st Main Rd, <br> R.V. Nagar, Block I, Annanagar East, <br> Chennai, Tamil Nadu 600102</p><br>
+
+          <p id="address"> <a href="https://globfone.com/call-phone/" target="_blank"><i class="fa-solid fa-phone" id="footer-icon" title="Phone" data-bs-toggle="tooltip"></i></a>
+            +91-9677277246 </p> <br>
+
+          <p id="address"> <a href="mailto:plantus.lottraders@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="footer-icon" title="Open Mail" data-bs-toggle="tooltip"></i></a> plantus.lottraders@gmail.com</p>
+
+          <img src="./img/QR code.png" title="Scan Location" data-bs-toggle="tooltip" alt="" style="height:100px; width:100px; margin-top:30px;">
+
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap tooltips-->
+<script>
+  // Initialize tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  </script>
+</body>
+</html>

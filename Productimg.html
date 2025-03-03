@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantus lot Traders</title>
+    <link rel="icon" href="./img/final logo_page-0001-Photoroom.png">
+    <link rel="stylesheet" href="./Project.css">
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- animate.css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- On scrool -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- Awsome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        
+      .imgsize {
+        height: 300px;
+        width: 100%; /* Makes it responsive */
+        border: 2px solid black;
+        object-fit: cover; /* Ensures proper scaling */
+        }
+
+      .imgsize:hover{
+          opacity: 0.6;
+          border: 1px solid rgb(70, 67, 67);
+      }
+      #producthead{
+          text-align: center;
+          margin-top: 70px;
+          color: rgb(250, 249, 249);
+      }
+
+      body{
+        font-family: Host Grotesk, serif;
+        overflow-x: hidden;
+      }
+    </style>
+</head>
+
+
+
+<body style="background-color:rgb(100, 100, 100)">
+<!-- Menu Bar -->
+
+  <!-- <div class="mainpop"> -->
+    <div class="container-fluid headdum" style="padding:1px 10px">
+      <div class="d-flex justify-content-between align-items-center">
+          <!-- Menu Button (Left) -->
+          <button id="menu-btn" class="menu-btn">☰</button>
+
+          <!-- Centered Menu -->
+          <div id="menu-bar" class="animate__animated animate__fadeInLeft">
+              <ul id="add">
+                  <li><a href="./Plantus_home.html">HOME</a></li>
+                  <li><a href="./About.html">ABOUT US</a></li>
+                  <li><a href="./Brochure/Rice.pdf" target="_blank">BROCHURE</a></li>
+                  <li><a href="./Product.html">OUR PRODUCTS</a></li>
+                  <li><a href="./Policy.html">POLICY</a></li>
+                  <li><a href="./Contact.html">CONTACT US</a></li>
+              </ul>
+          </div>  
+
+          <!-- Logo & Company Name (Right) -->
+          <div class="d-flex align-items-center gap-3">
+              <img src="./img/final logo img.jpg" alt="logo" class="logo">
+              <span class="companyname mt-2">Plantus Lot Traders</span>
+          </div>
+      </div>
+  </div>
+
+  <style>
+
+      @media only screen and (max-width: 600px) {
+          .companyname {background: black;
+                      font-size:18px;
+                      padding-left: 0px;
+          }
+          .logo{
+              height: 50px;
+              width: 65px;
+          }
+        }
+  </style>
+
+  <!-- <script>
+      const menuButton = document.getElementById("menu-btn");
+      const menuBar = document.getElementById("menu-bar");
+
+      // Toggle menu visibility
+      menuButton.addEventListener("click", () => {
+          menuBar.style.display = (menuBar.style.display === "block") ? "none" : "block";
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (event) => {
+          if (!menuButton.contains(event.target) && !menuBar.contains(event.target)) {
+              menuBar.style.display = "none";
+          }
+      });
+  </script> -->
+
+  <script>
+      const menuButton = document.getElementById("menu-btn"); // Corrected selector
+      const menuBar = document.getElementById("menu-bar");
+  
+      // Toggle the menu bar when the button is clicked
+      menuButton.addEventListener("click", () => {
+        if (menuBar.style.display === "block") {
+          menuBar.style.display = "none";
+        } else {
+          menuBar.style.display = "block";
+  
+          // Automatically close the menu after 10 seconds
+          setTimeout(() => {
+            menuBar.style.display = "none";
+          }, 20000); // 10 seconds
+        }
+      });
+  
+      // Close the menu bar when any menu item is clicked
+      const menuItems = menuBar.querySelectorAll("a");
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          menuBar.style.display = "none";
+        });
+      });
+    </script>
+
+      
+        <!-- <span id="rice"></span>
+        <h2 id="producthead">Rice varieties</h2>
+  <div class="condainer">
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/Jasmine rice.jpg" alt="Jasmine">
+        <img id="imgsize" src="./protuctimg/Basmati rice.jpg" alt="Basmati">
+        <img id="imgsize" src="./protuctimg/parboiled rice.png" alt="parboiled">
+        <img id="imgsize" src="./protuctimg/ponni rice.png" alt="ponni">
+        <img id="imgsize" src="./protuctimg/Poongar rices.jpg" alt="Poongar">
+        <img id="imgsize" src="./protuctimg/Red rice.jpg" alt="Red">
+        <img id="imgsize" src="./protuctimg/sona masuri.jpg" alt="sona">
+        <img id="imgsize" src="./protuctimg/parboiled rice.png" alt="parboiled">
+        <img id="imgsize" src="./protuctimg/Wild elephant rice.png" alt="Wild elephant">
+      </div>
+  </div>
+
+  
+      <span id="Spices"></span>
+      <h2 id="producthead">Spices varieties</h2>
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/black cardamom.jpg" alt="cardamom">
+        <img id="imgsize" src="./protuctimg/black pepper.jpg" alt="pepper">
+        <img id="imgsize" src="./protuctimg/bulb turmeric.jpg" alt="turmeric">
+        <img id="imgsize" src="./protuctimg/carom.jpg" alt="carom">
+        <img id="imgsize" src="./protuctimg/cinnamon stick.jpg" alt="cinnamon">
+        <img id="imgsize" src="./protuctimg/clove.jpg" alt="clove">
+        <img id="imgsize" src="./protuctimg/coriander seed.jpg" alt="coriander">
+        <img id="imgsize" src="./protuctimg/cumin powder.jpg" alt="cumin">
+        <img id="imgsize" src="./protuctimg/cumin seed.jpg" alt="cumin">
+        <img id="imgsize" src="./protuctimg/Dry bay leaf.jpg" alt="Dry">
+        <img id="imgsize" src="./protuctimg/fennel seed.jpg" alt="fennel">
+        <img id="imgsize" src="./protuctimg/fenugreek seed.jpg" alt="fenugreek">
+        <img id="imgsize" src="./protuctimg/finger turmeric.jpg" alt="finger">
+        <img id="imgsize" src="./protuctimg/green cardamom.jpg" alt="green">
+        <img id="imgsize" src="./protuctimg/Javitri or Mace.jpg" alt="Javitri">
+        <img id="imgsize" src="./protuctimg/nutmeg.jpg" alt="nutmeg">
+        <img id="imgsize" src="./protuctimg/Red chilly.jpg" alt="Red">
+        <img id="imgsize" src="./protuctimg/star anise.jpg" alt="star">
+        <img id="imgsize" src="./protuctimg/Urad dal (ulundhu).jpg" alt="Urad">
+        <img id="imgsize" src="./protuctimg/white Pepper.jpg" alt="white">
+        <img id="imgsize" src="./protuctimg/bulb turmeric.jpg" alt="bulb">
+      </div>
+
+ 
+
+      <span id="Millets"></span>
+
+      <h2 id="producthead">Millets varieties</h2>
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/barnyard millet (kuthiraivali).webp" alt="barnyard">
+        <img id="imgsize" src="./protuctimg/finger millet (Ragi).jpg" alt="finger">
+        <img id="imgsize" src="./protuctimg/Foxtail millet seeds (Thinai).jpg" alt="Foxtail">
+        <img id="imgsize" src="./protuctimg/jowar millet (soolam).jpg" alt="jowar">
+        <img id="imgsize" src="./protuctimg/Kodo millet (varagu).jpg" alt="Kodo">
+        <img id="imgsize" src="./protuctimg/Little Millet (saamai).jpg" alt="Little">
+        <img id="imgsize" src="./protuctimg/pearl millet (kambu)s.jpg" alt="pearl">
+        <img id="imgsize" src="./protuctimg/proso millet (panivaragu).jpg" alt="proso">
+        <img id="imgsize" src="./protuctimg/wheat.jpg" alt="wheat">
+      </div>
+
+      <span id="Oils"></span>
+      <h2 id="producthead">Oils varieties</h2>
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/Coconut oil.jpg" alt="Coconut">
+        <img id="imgsize" src="./protuctimg/Gingelly oil.jpeg" alt="Gingelly">
+        <img id="imgsize" src="./protuctimg/Groundnut oil.jpg" alt="Groundnut">
+        <img id="imgsize" src="./protuctimg/Sunflower oil.jpg" alt="Sunflower">
+        <img id="imgsize" src="./protuctimg/Groundnut2 oil.jpg" alt="Groundnut2">
+        <img id="imgsize" src="./protuctimg/Coconut2 oil.jpg" alt="Coconut2">
+      </div>
+
+
+      <span id="Salts"></span>
+      <h2 id="producthead">Salts varieties</h2>
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/Salt.jpg" alt="Salt">
+        <img id="imgsize" src="./protuctimg/Rock Salt.jpg" alt="Rock">
+        <img id="imgsize" src="./protuctimg/rock and salt.jpg" alt="rock and salt">
+        
+      </div>
+
+
+      <span id="Health"></span>
+      <h2 id="producthead">Health varieties</h2>
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/health mix.jpg" alt="health">
+        <img id="imgsize" src="./protuctimg/moringa powder.jpg" alt="moringa">
+        <img id="imgsize" src="./protuctimg/Red saffron threads.jpg" alt="saffron">
+      </div>
+
+
+
+      <span id="Coconut"></span>
+      <h2 id="producthead">Coconut products varieties</h2>
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/coconut coir.jpg" alt="coconut coir">
+        <img id="imgsize" src="./protuctimg/Coconut.jpg" alt="Coconut">
+        <img id="imgsize" src="./protuctimg/cocopeat block.jpg" alt="cocopeat block">
+        <img id="imgsize" src="./protuctimg/cocopeat disc.jpg" alt="cocopeat disc">
+        <img id="imgsize" src="./protuctimg/Tender Coconuts.jpg" alt="Tender Coconuts">
+        <img id="imgsize" src="./protuctimg/freshcoconuts.jpg" alt="Fresh coconuts">
+      </div>
+
+      <span id="Cleaning"></span>
+      <h2 id="producthead">Cleaning Chemicals</h2>
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/cleaninghouse.jpg" alt="cleaninghouse">
+        <img id="imgsize" src="./protuctimg/cleaninghome.jpg" alt="cleaninghome">
+        <img id="imgsize" src="./protuctimg/cleaningtools.jpg" alt="cleaningtools">
+      </div>
+
+      <span id="Construction"></span>
+      <h2 id="producthead">Construction Materials</h2>
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/tools-table.jpg" alt="tools-table">
+        <img id="imgsize" src="./protuctimg/houseconcept.jpg" alt="houseconcept">
+        <img id="imgsize" src="./protuctimg/stone-texture.jpg" alt="stone-texture">
+      </div>
+
+
+      <span id="Mechanical"></span>
+      <h2 id="producthead">Mechanical Components</h2>
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/Mechanical compounent.webp" alt="Mechanical compounent">
+        <img id="imgsize" src="./protuctimg/mechenical1.jpg" alt="Mechanical compounent ">
+        <img id="imgsize" src="./protuctimg/mechenical2.jpg" alt="Mechanical compounent">
+      </div>
+
+
+
+      <span id="Others"></span>
+      <h2 id="producthead">Others</h2>
+      <div id="productview">
+        <img id="imgsize" src="./protuctimg/industrial1.jpg" alt="Industrial Meterials">
+        <img id="imgsize" src="./protuctimg/industrial2.jpg" alt="Industrial Meterials ">
+        <img id="imgsize" src="./protuctimg/industrial3.jpg" alt="Industrial Meterials">
+      </div> -->
+
+
+
+      <span id="rice"></span>
+      <h2 id="producthead">Rice varieties</h2>
+    
+    <div class="container mt-4">
+        <div class="row g-3"> <!-- g-3 adds spacing between images -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Jasmine rice.jpg" alt="Jasmine">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Basmati rice.jpg" alt="Basmati">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/parboiled rice.png" alt="Parboiled">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/ponni rice.png" alt="Ponni">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Poongar rices.jpg" alt="Poongar">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Red rice.jpg" alt="Red">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/sona masuri.jpg" alt="Sona">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Wild elephant rice.png" alt="Wild Elephant">
+            </div>
+        </div>
+    </div>
+    
+    
+      
+    <span id="Spices"></span>
+      <h2 id="producthead">Spices varieties</h2>
+    
+    <div class="container mt-4">
+      <div class="row g-3"> <!-- g-3 adds spacing between images -->
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/black cardamom.jpg" alt="cardamom">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/black pepper.jpg" alt="pepper">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/bulb turmeric.jpg" alt="turmeric">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/carom.jpg" alt="carom">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/cinnamon stick.jpg" alt="cinnamon">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/clove.jpg" alt="clove">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/coriander seed.jpg" alt="coriander">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/Dry bay leaf.jpg" alt="Dry">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/fennel seed.jpg" alt="fennel">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img class="imgsize img-fluid" src="./protuctimg/fenugreek seed.jpg" alt="fenugreek">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <img class="imgsize img-fluid" src="./protuctimg/finger turmeric.jpg" alt="finger">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <img class="imgsize img-fluid" src="./protuctimg/green cardamom.jpg" alt="green">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img class="imgsize img-fluid" src="./protuctimg/Javitri or Mace.jpg" alt="Javitri">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img class="imgsize img-fluid" src="./protuctimg/nutmeg.jpg" alt="nutmeg">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <img class="imgsize img-fluid" src="./protuctimg/Red chilly.jpg" alt="Red">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+            <img class="imgsize img-fluid" src="./protuctimg/star anise.jpg" alt="star">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img class="imgsize img-fluid" src="./protuctimg/Urad dal (ulundhu).jpg" alt="Urad">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img class="imgsize img-fluid" src="./protuctimg/white Pepper.jpg" alt="white">
+        </div>
+      </div>
+    </div>
+    
+    
+    <span id="Millets"></span>
+    <h2 id="producthead">Millets varieties</h2>
+    
+      <div class="container mt-4">
+        <div class="row g-3"> <!-- g-3 adds spacing between images -->
+            <!-- <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/barnyard millet (kuthiraivali).webp" alt="barnyard">
+            </div> -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/finger millet (Ragi).jpg" alt="finger">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Foxtail millet seeds (Thinai).jpg" alt="Foxtail">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/jowar millet (soolam).jpg" alt="jowar">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Kodo millet (varagu).jpg" alt="Kodo">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Little Millet (saamai).jpg" alt="Little">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/pearl millet (kambu)s.jpg" alt="pearl">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/proso millet (panivaragu).jpg" alt="proso">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/wheat.jpg" alt="wheat">
+          </div>
+        </div>
+      </div>
+    
+    
+    <span id="Oils"></span>
+    <h2 id="producthead">Oils varieties</h2>
+    
+      <div class="container mt-4">
+        <div class="row g-3"> <!-- g-3 adds spacing between images -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Coconut oil.jpg" alt="Coconut">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Gingelly oil.jpeg" alt="Gingelly">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Groundnut oil.jpg" alt="Groundnut">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Sunflower oil.jpg" alt="Sunflower">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Groundnut2 oil.jpg" alt="Groundnut2">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/Coconut2 oil.jpg" alt="Coconut2">
+            </div>
+        </div>
+      </div>
+    
+    
+    
+    <span id="Salts"></span>
+    <h2 id="producthead">Salts varieties</h2>
+    
+          <div class="container mt-4">
+            <div class="row g-3"> <!-- g-3 adds spacing between images -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img class="imgsize img-fluid" src="./protuctimg/Salt.jpg" alt="Salt">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img class="imgsize img-fluid" src="./protuctimg/Rock Salt.jpg" alt="Rock">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img class="imgsize img-fluid" src="./protuctimg/rock and salt.jpg" alt="rock and salt">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                  <img class="imgsize img-fluid" src="./protuctimg/pinksalt.jpg" alt="rock and salt">
+              </div>
+            </div>
+          </div>
+    
+    <span id="Health"></span>
+    <h2 id="producthead">Health varieties</h2>
+    
+    <div class="container mt-4">
+      <div class="row g-3"> <!-- g-3 adds spacing between images -->
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/health mix.jpg" alt="health">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/moringa powder.jpg" alt="moringa">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/Red saffron threads.jpg" alt="saffron">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img class="imgsize img-fluid" src="./protuctimg/healthpowder.jpg" alt="saffron">
+        </div>  
+      </div>
+    </div>
+    
+    
+    <span id="Coconut"></span>
+      <h2 id="producthead">Coconut varieties</h2>
+    
+          <div class="container mt-4">
+            <div class="row g-3"> <!-- g-3 adds spacing between images -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img class="imgsize img-fluid" src="./protuctimg/coconut coir.jpg" alt="coconut coir">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img class="imgsize img-fluid" src="./protuctimg/Coconut.jpg" alt="Coconut">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img class="imgsize img-fluid" src="./protuctimg/cocopeat block.jpg" alt="cocopeat block">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                  <img class="imgsize img-fluid" src="./protuctimg/cocopeat disc.jpg" alt="cocopeat disc">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                  <img class="imgsize img-fluid" src="./protuctimg/Tender Coconuts.jpg" alt="Tender Coconuts">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                  <img class="imgsize img-fluid" src="./protuctimg/freshcoconuts.jpg" alt="Fresh coconuts">
+                </div>        
+            </div>
+          </div>
+
+          <span id="Friuts"></span>
+          <h2 id="producthead">Friuts</h2>
+        
+              <div class="container mt-4">
+                <div class="row g-3"> <!-- g-3 adds spacing between images -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="imgsize img-fluid" src="./protuctimg/fruits.jpg" alt="coconut coir">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="imgsize img-fluid" src="./protuctimg/Fruits1.jpg" alt="Coconut">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="imgsize img-fluid" src="./protuctimg/Friuts2.jpg" alt="cocopeat block">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                      <img class="imgsize img-fluid" src="./protuctimg/fruits3.jpg" alt="cocopeat disc">
+                    </div>       
+                </div>
+              </div>
+          
+
+              <span id="Vegetables"></span>
+          <h2 id="producthead">Vegetables</h2>
+        
+              <div class="container mt-4">
+                <div class="row g-3"> <!-- g-3 adds spacing between images -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="imgsize img-fluid" src="./protuctimg/Vegetables1.jpg" alt="coconut coir">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="imgsize img-fluid" src="./protuctimg/vegetable3.jpg" alt="Coconut">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="imgsize img-fluid" src="./protuctimg/vegetables2.jpg" alt="cocopeat block">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                      <img class="imgsize img-fluid" src="./protuctimg/vegetables4.jpg" alt="cocopeat disc">
+                    </div>       
+                </div>
+              </div>
+
+
+      <span id="Cleaning"></span>
+      <h2 id="producthead">Cleaning Chemicals</h2>
+      <div class="container mt-4">
+        <div class="row g-3"> <!-- g-3 adds spacing between images -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/cleaninghouse.jpg" alt="cleaninghouse">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/cleaninghome.jpg" alt="cleaninghome">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/cleaningtools.jpg" alt="cleaningtools">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img class="imgsize img-fluid" src="./protuctimg/chemicals.jpg" alt="cleaningtools">
+          </div>   
+        </div>
+      </div>
+    
+      <span id="Construction"></span>
+      <h2 id="producthead">Construction Materials</h2>
+      <div class="container mt-4">
+        <div class="row g-3"> <!-- g-3 adds spacing between images -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/tools-table.jpg" alt="tools-table">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/houseconcept.jpg" alt="houseconcept">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/stone-texture.jpg" alt="stone-texture">
+          </div>  
+          <div class="col-6 col-md-4 col-lg-3">
+            <img class="imgsize img-fluid" src="./protuctimg/Briks.jpg" alt="stone-texture">
+          </div>  
+        </div>
+      </div>
+    
+    
+      <span id="Mechanical"></span>
+      <h2 id="producthead">Mechanical Components</h2>
+          <div class="container mt-4">
+            <div class="row g-3"> <!-- g-3 adds spacing between images -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img class="imgsize img-fluid" src="./protuctimg/Mechanical compounent.webp" alt="Mechanical compounent">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img class="imgsize img-fluid" src="./protuctimg/mechenical1.jpg" alt="Mechanical compounent">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                  <img class="imgsize img-fluid" src="./protuctimg/mechenical2.jpg" alt="Mechanical compounent">
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <img class="imgsize img-fluid" src="./protuctimg/mechcomponend.png" alt="Mechanical compounent">
+            </div>
+            </div>
+          </div>
+    
+    
+    <span id="Others"></span>
+    <h2 id="producthead">Others</h2>
+    <div class="container mt-4">
+      <div class="row g-3"> <!-- g-3 adds spacing between images -->
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/industrial1.jpg" alt="Industrial Meterials">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+              <img class="imgsize img-fluid" src="./protuctimg/industrial2.jpg" alt="Industrial Meterials">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img class="imgsize img-fluid" src="./protuctimg/industrial3.jpg" alt="Industrial Meterials">
+        </div>  
+        <div class="col-6 col-md-4 col-lg-3">
+          <img class="imgsize img-fluid" src="./protuctimg/Othersimg.png" alt="Industrial Meterials">
+        </div>
+      </div>
+    </div>
+
+
+<!-- Top scrool -->
+<button id="scrollBtn" onclick="scrollToTop()"><i class="fa-solid fa-angle-up"></i></button>
+
+<script>
+    window.onscroll = function() {
+        let scrollBtn = document.getElementById("scrollBtn");
+        if (document.documentElement.scrollTop > 100) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+
+<!-- Footer -->
+<div id="footerimage">
+  <div class="footer">
+    <ul style="margin-left:50px;position:relative; list-style-type:none" id="footerul">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Company</span></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Plantus_home.html">Home</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./About.html">About Us</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Brochure/Rice.pdf" target="_blank">Brochure</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html">Our Products</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Policy.html">Policy</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Contact.html">Contact Us</a></li>
+    </ul>
+
+    <ul class="footerproduct">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Our Products</span></li>
+
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-rice">Rice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-spices">Spice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-millets">Millets</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-oils">Oils</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-salt">Salts</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-health">Health</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CoconutProducts">Coconut products</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-fruits">Fruits</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Vegetables">Vegetables</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CleaningChemicals">Cleaning Chemicals</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-ConstructionMaterials">Construction Materials</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-MechanicalComponents">Mechanical Components</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Others">Others</a></li>
+
+    </ul>
+    
+    <div style="margin-top:30px">
+      <p id="address">
+        <a href="https://maps.app.goo.gl/kczAD1vzUwDPhi6X8" target="_blank"><i class="fa-solid fa-location-dot"  id="footer-icon" title="Go to Google Map" data-bs-toggle="tooltip"></i></a>Plantus Lot Traders,
+        No:13, 1st Main Rd, <br> R.V. Nagar, Block I, Annanagar East, <br> Chennai, Tamil Nadu 600102</p><br>
+
+          <p id="address"> <a href="https://globfone.com/call-phone/" target="_blank"><i class="fa-solid fa-phone" id="footer-icon" title="Phone" data-bs-toggle="tooltip"></i></a>
+            +91-9677277246 </p> <br>
+
+          <p id="address"> <a href="mailto:plantus.lottraders@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="footer-icon" title="Open Mail" data-bs-toggle="tooltip"></i></a> plantus.lottraders@gmail.com</p>
+
+          <img src="./img/QR code.png" title="Scan Location" data-bs-toggle="tooltip" alt="" style="height:100px; width:100px; margin-top:30px;">
+
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap tooltips-->
+<script>
+  // Initialize tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  </script>
+
+
+</body>
+</html>

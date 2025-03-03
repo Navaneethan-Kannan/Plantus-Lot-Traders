@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantus lot Traders Policy</title>
+    <link rel="icon" href="./img/final logo_page-0001-Photoroom.png">
+    <link rel="stylesheet" href="./Project.css">
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- animate.css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- On scrool AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Awsome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
+    <style>
+      body{
+        font-family: "Host Grotesk", serif;
+        /*background-image: linear-gradient(to right, #FAF3E0, beige ) ;*/
+      }
+      .mainlist {
+        line-height: 30px;
+        margin-top: 20px;
+      }
+      #policyhead{
+      color: #c75a12;
+      }
+      .list1{
+      line-height: 28px;
+      font-size:x-small;
+      }
+      #list1{
+        color: rgb(105, 104, 104);
+        font-size: 16px;
+        list-style-type:"🗸  ";
+      }
+      #list{
+        color: rgb(105, 104, 104);
+        font-size: 16px;
+      }
+      .plicyhead{
+        background-color: #fcf7f1;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color:#c75a12;
+        font-weight: bold;
+        font-size:40px;
+    
+      }
+      .homepolicy{
+        font-variant: small-caps;
+        font-size: small;
+        color:rgb(100, 96, 96)
+      }
+      #policyanchor{
+        text-decoration: none;
+        color:rgb(100, 96, 96)
+      }
+      #policyanchor:hover{
+        color: chocolate;
+      }
+    </style>
+</head>
+<body>
+
+
+<!-- On scrool script-->
+<script>
+  AOS.init();
+</script>
+
+
+<!-- <div class="mainpop"> -->
+  <div class="container-fluid headdum" style="padding:1px 10px">
+    <div class="d-flex justify-content-between align-items-center">
+        <!-- Menu Button (Left) -->
+        <button id="menu-btn" class="menu-btn">☰</button>
+
+        <!-- Centered Menu -->
+        <div id="menu-bar" class="animate__animated animate__fadeInLeft">
+            <ul id="add">
+                <li><a href="./Plantus_home.html">HOME</a></li>
+                <li><a href="./About.html">ABOUT US</a></li>
+                <li><a href="./Brochure/Rice.pdf" target="_blank">BROCHURE</a></li>
+                <li><a href="./Product.html">OUR PRODUCTS</a></li>
+                <li><a href="./Policy.html">POLICY</a></li>
+                <li><a href="./Contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <!-- Logo & Company Name (Right) -->
+        <div class="d-flex align-items-center gap-3">
+            <img src="./img/final logo img.jpg" alt="logo" class="logo">
+            <span class="companyname mt-2">Plantus Lot Traders</span>
+        </div>
+    </div>
+  </div>
+
+<style>
+
+    @media only screen and (max-width: 600px) {
+        .companyname {background: black;
+                    font-size:18px;
+                    padding-left: 0px;
+        }
+        .logo{
+            height: 50px;
+            width: 65px;
+        }
+        body {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      }
+</style>
+
+<script>
+  const menuButton = document.getElementById("menu-btn");
+  const menuBar = document.getElementById("menu-bar");
+
+  // Toggle the menu bar when the button is clicked
+  menuButton.addEventListener("click", () => {
+    if (menuBar.style.display === "block") {
+      menuBar.style.display = "none";
+    } else {
+      menuBar.style.display = "block";
+
+      // Automatically close the menu after 10 seconds  
+      setTimeout(() => {
+        menuBar.style.display = "none";
+      }, 20000); // 10 seconds
+    }
+  });
+
+  // Close the menu bar when any menu item is clicked
+  const menuItems = menuBar.querySelectorAll("a");
+  menuItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      menuBar.style.display = "none";
+    });
+  });
+</script>
+
+<div>
+  <h1 class="plicyhead">
+    Privacy Policy <br> <span class="homepolicy"><a id="policyanchor" href="./Plantus_home.html">Home</a>  / Policy</span>
+  </h1>
+</div>
+
+<div class="container" style="margin-top:60px">
+
+  <h3 id="policyhead">Compliance with Laws & Regulations</h3>
+  <ul class="mainlist">
+    <li id="list">Adherence to domestic and international trade laws, including customs regulations.</li>
+    <li id="list">Compliance with export control laws (e.g., U.S. Export Administration Regulations (EAR), ITAR, EU trade laws).</li>
+    <li id="list">Ensuring products do not violate sanctions imposed by the UN, U.S., EU, or other regulatory bodies.</li>
+    <li id="list">The company shall comply with all applicable Indian export laws, including:</li>
+    <li id="list">Foreign Trade Policy (FTP) issued by the Directorate General of Foreign Trade (DGFT).</li>
+    <li id="list">Customs Act, 1962 and Goods and Services Tax (GST) Act, 2017.</li>
+    <li id="list">Regulations by Reserve Bank of India (RBI) for foreign exchange transactions</li>
+  </ul>
+
+ <h3 id="policyhead">Product Classification & Documentation</h3>
+ <ul class="mainlist">
+  <li id="list">Correct classification of goods under the Harmonized System (HS) Code.</li>
+  <li id="list">If required samples will be couriered.</li>
+  <li id="list">Proper documentation, including commercial invoices, packing lists, export licenses, and certificates of origin.</li>
+  <li id="list">Keeping accurate records of all export transactions for compliance and audits.</li>
+</ul>
+<h6>Mandatory documentation includes:</h6>
+<ul class="list1">
+  <li id="list1">Invoice & Packing List</li>
+  <li id="list1">Shipping Bill (Filed with Indian Customs through ICEGATE)</li>
+  <li id="list1">Bill of Lading/Airway Bill</li>
+  <li id="list1">Certificate of Origin (if required)</li>
+  <li id="list1">Export Declaration Form (EDF) (for foreign exchange reporting to RBI)</li>
+  <li id="list1">Export License (for restricted items)</li>
+</ul>
+
+
+
+<h3 id="policyhead">Licensing & Permits</h3>
+  <ul class="mainlist">
+    <li id="list">Requirement for obtaining the necessary export licenses.</li>
+    <li id="list">Procedures for restricted or dual-use goods that may need special permissions.</li>
+    <li id="list">No trade with banned or restricted countries as per DGFT and MEA (Ministry of External Affairs) notifications.</li>
+  </ul>
+
+  <h3 id="policyhead">Screening of Customers & Partners</h3>
+  <ul class="mainlist">
+    <li id="list">Conducting due diligence on buyers, suppliers, and intermediaries.</li>
+    <li id="list">Screening against denied party lists, watchlists, and embargoed countries.</li>
+    <li id="list">All parties shall be screened against the DGFT Denied Entities List, RBI Watchlist, and International Blacklists.</li>
+    <li id="list">KYC (Know Your Customer) process must be followed before entering into an export contract.</li>
+  </ul>
+
+  <h3 id="policyhead">Payment & Financial Policies </h3>
+  <ul class="mainlist">
+    <li id="list">Accepted payment methods (e.g., Letter of Credit, advance payment, bank transfers).</li>
+    <li id="list">Compliance with anti-money laundering (AML) and financial regulations.</li>
+  </ul>
+
+  <h6>The company shall follow RBI guidelines for foreign exchange transactions, including:</h6>
+<ul class="list1">
+  <li id="list1">Advance Payment: Allowed but must comply with FEMA (Foreign Exchange Management Act)</li>
+  <li id="list1">Letter of Credit (LC): Preferred payment method</li>
+  <li id="list1">Realization of Export Proceeds: Payments must be received in 180 days (or as per RBI norms).</li>
+  <li id="list1">E-BRC (Electronic Bank Realization Certificate) must be obtained for export incentives and GST refunds.</li>
+</ul>
+
+
+<h3 id="policyhead">Logistics & Shipping Policies</h3>
+  <ul class="mainlist">
+    <li id="list">Selection of authorized freight forwarders and shipping agents.</li>
+    <li id="list">Ensuring proper packaging, labeling, and insurance for exported goods.</li>
+    <li id="list">Compliance with Incoterms (e.g., FOB, CIF, EXW).</li>
+    <li id="list">The company shall use the Indian Customs Electronic Gateway (ICEGATE) for filing shipping bills and customs clearance.</li>
+
+  </ul>
+
+
+  <h3 id="policyhead">Intellectual Property Protection</h3>
+  <ul class="mainlist">
+    <li id="list">Measures to safeguard trademarks, patents, and proprietary technology.</li>
+    <li id="list">Restriction on sharing sensitive technical information without authorization.</li>
+    <li id="list">Maintain confidentiality and trade secrets.</li>
+  </ul>
+
+
+  <h3 id="policyhead">Ethics & Anti-Corruption</h3>
+  <ul class="mainlist">
+    <li id="list">Prohibition of bribery, kickbacks, and unethical trade practices.</li>
+    <li id="list">Compliance with the Prevention of Corruption Act (India), FCPA (USA), and UK Bribery Act.</li>
+    <li id="list">Employees and representatives must undergo anti-corruption training.</li>
+  </ul>
+
+
+  <h3 id="policyhead">Risk Management & Contingency Planning</h3>
+  <ul class="mainlist">
+    <li id="list">Identifying and mitigating risks in international markets.</li>
+    <li id="list">Having contingency plans for trade restrictions, political instability, or supply chain disruptions.</li>
+  </ul>
+
+  <h3 id="policyhead">Employee Training & Responsibilities</h3>
+  <ul class="mainlist">
+    <li id="list">Regular training for employees on export compliance and best practices.</li>
+    <li id="list">Clear roles and responsibilities for export-related activities.</li>
+  </ul>
+
+</div>
+
+
+
+
+<!-- Footer -->
+<div id="footerimage">
+  <div class="footer">
+    <ul style="margin-left:50px;position:relative; list-style-type:none" id="footerul">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Company</span></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Plantus_home.html">Home</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./About.html">About Us</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Brochure/Rice.pdf" target="_blank">Brochure</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html">Our Products</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Policy.html">Policy</a></li>
+        <li id="footerlist"><a style="color:black; font-weight:500" href="./Contact.html">Contact Us</a></li>
+    </ul>
+
+    <ul class="footerproduct">
+      <li id="lisymbol" ><span style="color:rgb(199, 71, 24)">Our Products</span></li>
+
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-rice">Rice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-spices">Spice</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-millets">Millets</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-oils">Oils</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-salt">Salts</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-health">Health</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CoconutProducts">Coconut products</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-fruits">Fruits</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Vegetables">Vegetables</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-CleaningChemicals">Cleaning Chemicals</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-ConstructionMaterials">Construction Materials</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-MechanicalComponents">Mechanical Components</a></li>
+      <li id="footerlist"><a style="color:black; font-weight:500" href="./Product.html#bookmark-Others">Others</a></li>
+
+    </ul>
+    
+    <div style="margin-top:30px">
+      <p id="address">
+        <a href="https://maps.app.goo.gl/kczAD1vzUwDPhi6X8" target="_blank"><i class="fa-solid fa-location-dot"  id="footer-icon" title="Go to Google Map" data-bs-toggle="tooltip"></i></a>Plantus Lot Traders,
+        No:13, 1st Main Rd, <br> R.V. Nagar, Block I, Annanagar East, <br> Chennai, Tamil Nadu 600102</p><br>
+
+          <p id="address"> <a href="https://globfone.com/call-phone/" target="_blank"><i class="fa-solid fa-phone" id="footer-icon" title="Phone" data-bs-toggle="tooltip"></i></a>
+            +91-9677277246 </p> <br>
+
+          <p id="address"> <a href="mailto:plantus.lottraders@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="footer-icon" title="Open Mail" data-bs-toggle="tooltip"></i></a> plantus.lottraders@gmail.com</p>
+
+          <img src="./img/QR code.png" title="Scan Location" data-bs-toggle="tooltip" alt="" style="height:100px; width:100px; margin-top:30px;">
+
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap tooltips-->
+<script>
+  // Initialize tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  </script>
+</body>
+</html>
